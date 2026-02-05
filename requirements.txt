@@ -5,7 +5,7 @@
 
 # Core framework + optional features used by this repo.
 # NOTE: extras are defined in ipfs_datasets_py/setup.py.
--e ./ipfs_datasets_py[api,vectors,pdf,logic]
+-e ./ipfs_datasets_py[api,vectors,pdf,logic,ipld]
 
 # Runtime deps referenced by the framework / parser
 protobuf>=4.25.0
