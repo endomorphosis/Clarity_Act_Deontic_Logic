@@ -1,15 +1,19 @@
-# Core dependencies
-# These are optional - the parser has fallback implementations if not available
+# Workspace dependencies
+#
+# Install the local framework submodule in editable mode so a rebuilt `.venv`
+# has consistent behavior.
 
-# For full deontic logic framework support
+# Core framework + optional features used by this repo.
+# NOTE: extras are defined in ipfs_datasets_py/setup.py.
+-e ./ipfs_datasets_py[api,vectors,pdf]
+
+# Runtime deps referenced by the framework / parser
+protobuf>=4.25.0
+beautifulsoup4>=4.12.0
+readability-lxml>=0.8.1
+newspaper3k>=0.2.8
+lxml>=4.9.0
+nltk>=3.8.0
+
+# Parser-only utilities
 beartype>=0.15.0
-
-# For enhanced legal analysis (optional)
-symbolicai>=0.13.1
-
-# For PDF processing (if analyzing PDF versions of legislation)
-pypdf2>=3.0.0
-pdfplumber>=0.10.0
-
-# Standard library dependencies (usually already installed)
-# python>=3.8
