@@ -146,7 +146,7 @@
     "section": "DECENTRALIZED_GOVERNANCE",
     "text": "Decentralized blockchain systems MUST NOT be treated as controlled by a single entity",
     "requirement_type": "PROHIBITION",
-    "agent": "unspecified_agent",
+    "agent": "decentralized_blockchain_systems",
     "action": "be_treated_as_controlled",
     "conditions": [],
     "temporal_constraint": null
@@ -156,7 +156,7 @@
     "section": "DECENTRALIZED_GOVERNANCE",
     "text": "Changes in control or governance REQUIRE updated certification or reporting",
     "requirement_type": "OBLIGATION",
-    "agent": "unspecified_agent",
+    "agent": "changes_in_control_or_governance",
     "action": "updated_certification_or_reporting",
     "conditions": [],
     "temporal_constraint": null
@@ -166,7 +166,7 @@
     "section": "DECENTRALIZED_GOVERNANCE",
     "text": "Denied certifications MUST be subject to public review",
     "requirement_type": "OBLIGATION",
-    "agent": "unspecified_agent",
+    "agent": "denied_certifications",
     "action": "be",
     "conditions": [
       "public review"
@@ -198,7 +198,7 @@
     "section": "RULEMAKING_IMPLEMENTATION",
     "text": "Expedited registration procedures MUST be available during transition",
     "requirement_type": "OBLIGATION",
-    "agent": "unspecified_agent",
+    "agent": "expedited_registration_procedures",
     "action": "be_available_during_transition",
     "conditions": [],
     "temporal_constraint": "during transition"
@@ -248,8 +248,8 @@
     "section": "JURISDICTION",
     "text": "SEC maintains oversight for broker and dealer activities on national securities exchanges",
     "requirement_type": "OBLIGATION",
-    "agent": "sec",
-    "action": "sec_maintains_oversight_for_broker_and_dealer_acti",
+    "agent": "exchanges",
+    "action": "sec_maintains_oversight_for_broker_and_dealer_activities_on_national_securities_",
     "conditions": [],
     "temporal_constraint": null
   },
@@ -259,7 +259,7 @@
     "text": "SEC maintains oversight for activities on alternative trading systems",
     "requirement_type": "OBLIGATION",
     "agent": "sec",
-    "action": "sec_maintains_oversight_for_activities_on_alternat",
+    "action": "sec_maintains_oversight_for_activities_on_alternative_trading_systems",
     "conditions": [],
     "temporal_constraint": null
   },
