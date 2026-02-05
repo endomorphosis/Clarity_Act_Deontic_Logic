@@ -3,7 +3,7 @@ CLARITY ACT (H.R. 3633) - DEONTIC LOGIC ANALYSIS
 Digital Asset Market Clarity Act of 2025
 ================================================================================
 
-Analysis Date: 2026-02-04 22:59:52
+Analysis Date: 2026-02-04 23:02:52
 Total Requirements Extracted: 28
 Total Deontic Formulas: 28
 

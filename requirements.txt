@@ -5,7 +5,7 @@
 
 # Core framework + optional features used by this repo.
 # NOTE: extras are defined in ipfs_datasets_py/setup.py.
--e ./ipfs_datasets_py[api,vectors,pdf]
+-e ./ipfs_datasets_py[api,vectors,pdf,logic]
 
 # Runtime deps referenced by the framework / parser
 protobuf>=4.25.0
@@ -14,6 +14,9 @@ readability-lxml>=0.8.1
 newspaper3k>=0.2.8
 lxml>=4.9.0
 nltk>=3.8.0
+
+# SymbolicAI integration (imported as `symai`)
+symbolicai>=0.13.1
 
 # Parser-only utilities
 beartype>=0.15.0
