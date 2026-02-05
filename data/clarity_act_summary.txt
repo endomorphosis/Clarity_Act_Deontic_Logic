@@ -1,0 +1,64 @@
+CLARITY ACT (H.R. 3633) - Digital Asset Market Clarity Act of 2025
+
+SUMMARY OF KEY REQUIREMENTS AND PROVISIONS
+
+1. DEFINITIONS AND REGULATORY CLARITY
+   - The bill provides detailed definitions for "digital commodity," "blockchain," and "issuer"
+   - Distinguishes between digital commodity exchanges, brokers, and dealers
+   - Establishes jurisdiction between CFTC and SEC
+
+2. REGISTRATION AND REPORTING REQUIREMENTS
+   - Digital commodity exchanges MUST register with the CFTC
+   - Digital commodity brokers MUST register with the CFTC
+   - Digital commodity dealers MUST register with the CFTC
+   - Issuers MUST disclose information about blockchain system maturity
+   - Issuers MUST disclose financial condition
+   - SEC MUST certify blockchain systems deemed "mature"
+   - Both new and legacy digital commodities have special provisions for registration
+
+3. TRADE, MARKET INTEGRITY, AND CONSUMER PROTECTION
+   - Exchanges MUST implement trade monitoring
+   - Exchanges MUST maintain recordkeeping systems
+   - Exchanges MUST NOT commingle customer assets (or regulate commingling)
+   - Brokers and dealers MUST implement risk management
+   - Brokers and dealers MUST maintain reporting duties
+   - Brokers and dealers MUST maintain capital obligations
+   - Exchanges and brokers MUST implement customer protection measures
+   - Exchanges and brokers MUST implement custody rules subject to federal or state supervision
+
+4. DECENTRALIZED GOVERNANCE
+   - Decentralized blockchain systems MUST NOT be treated as controlled by a single entity
+   - Changes in control or governance REQUIRE updated certification or reporting
+   - Denied certifications MUST be subject to public review
+
+5. RULEMAKING AND IMPLEMENTATION
+   - SEC and CFTC MUST develop rules within 270 days of enactment
+   - SEC and CFTC MUST issue rules within 270 days of enactment
+   - Expedited registration procedures MUST be available during transition
+
+6. BANK SECRECY ACT AND ANTI-MONEY LAUNDERING
+   - Digital asset market intermediaries MUST comply with Bank Secrecy Act
+   - Registered entities MUST implement anti-money laundering programs
+   - Registered entities MUST implement counter-terrorism financing programs
+
+7. SEC AND CFTC JURISDICTIONS
+   - Digital commodities on mature blockchains MAY be exempt from SEC registration
+   - Digital commodities expected to mature within specific timeframes MAY be exempt
+   - Exemptions depend on meeting annual sales conditions
+   - SEC maintains oversight for broker and dealer activities on national securities exchanges
+   - SEC maintains oversight for activities on alternative trading systems
+
+8. ADDITIONAL PROVISIONS - FEDERAL RESERVE RESTRICTIONS
+   - Federal Reserve banks MUST NOT offer central bank digital currencies directly to individuals
+   - Federal Reserve banks MUST NOT use central bank digital currency for monetary policy operations
+
+9. COMPLIANCE TIMELINES
+   - Rules development: 270 days from enactment
+   - Registration procedures: Available during transition period
+   - Reporting frameworks: Specified in enforcement authority
+
+10. ENFORCEMENT AUTHORITY
+    - SEC has enforcement authority for securities-related violations
+    - CFTC has enforcement authority for commodity-related violations
+    - Both agencies have authority to bring enforcement actions
+    - Violations subject to civil and criminal penalties

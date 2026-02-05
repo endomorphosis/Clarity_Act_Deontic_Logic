@@ -1,0 +1,62 @@
+================================================================================
+CLARITY ACT (H.R. 3633) - DEONTIC LOGIC ANALYSIS
+Digital Asset Market Clarity Act of 2025
+================================================================================
+
+Analysis Date: 2026-02-05 02:58:38
+Total Requirements Extracted: 28
+Total Deontic Formulas: 28
+
+Requirement Types:
+  - Obligations: 23
+  - Prohibitions: 4
+  - Permissions: 1
+
+Requirements by Section:
+  - AML BANK SECRECY: 3
+  - DECENTRALIZED GOVERNANCE: 3
+  - FEDERAL RESERVE RESTRICTIONS: 2
+  - JURISDICTION: 3
+  - REGISTRATION AND REPORTING: 6
+  - RULEMAKING IMPLEMENTATION: 3
+  - TRADE MARKET INTEGRITY: 8
+
+================================================================================
+SAMPLE DEONTIC FORMULAS
+================================================================================
+
+Requirement ID: REG-001
+Section: REGISTRATION_AND_REPORTING
+Formal Notation: O[digital_commodity_exchanges](register_with_the_cftc)
+Natural Language: The digital commodity exchanges is obligated to register with the cftc.
+Source: Digital commodity exchanges MUST register with the CFTC
+--------------------------------------------------------------------------------
+
+Requirement ID: REG-002
+Section: REGISTRATION_AND_REPORTING
+Formal Notation: O[digital_commodity_brokers](register_with_the_cftc)
+Natural Language: The digital commodity brokers is obligated to register with the cftc.
+Source: Digital commodity brokers MUST register with the CFTC
+--------------------------------------------------------------------------------
+
+Requirement ID: REG-003
+Section: REGISTRATION_AND_REPORTING
+Formal Notation: O[digital_commodity_dealers](register_with_the_cftc)
+Natural Language: The digital commodity dealers is obligated to register with the cftc.
+Source: Digital commodity dealers MUST register with the CFTC
+--------------------------------------------------------------------------------
+
+Requirement ID: REG-004
+Section: REGISTRATION_AND_REPORTING
+Formal Notation: O[issuers](disclose_information_about_blockchain_system_maturity)
+Natural Language: The issuers is obligated to disclose information about blockchain system maturity.
+Source: Issuers MUST disclose information about blockchain system maturity
+--------------------------------------------------------------------------------
+
+Requirement ID: REG-005
+Section: REGISTRATION_AND_REPORTING
+Formal Notation: O[issuers](disclose_financial_condition)
+Natural Language: The issuers is obligated to disclose financial condition.
+Source: Issuers MUST disclose financial condition
+--------------------------------------------------------------------------------
+
