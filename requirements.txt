@@ -1,0 +1,15 @@
+# Core dependencies
+# These are optional - the parser has fallback implementations if not available
+
+# For full deontic logic framework support
+beartype>=0.15.0
+
+# For enhanced legal analysis (optional)
+symbolicai>=0.13.1
+
+# For PDF processing (if analyzing PDF versions of legislation)
+pypdf2>=3.0.0
+pdfplumber>=0.10.0
+
+# Standard library dependencies (usually already installed)
+# python>=3.8

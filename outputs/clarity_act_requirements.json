@@ -1,0 +1,302 @@
+[
+  {
+    "requirement_id": "REG-001",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "Digital commodity exchanges MUST register with the CFTC",
+    "requirement_type": "OBLIGATION",
+    "agent": "digital_commodity_exchanges",
+    "action": "register_with_the_cftc",
+    "conditions": [
+      "the CFTC"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "REG-002",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "Digital commodity brokers MUST register with the CFTC",
+    "requirement_type": "OBLIGATION",
+    "agent": "digital_commodity_brokers",
+    "action": "register_with_the_cftc",
+    "conditions": [
+      "the CFTC"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "REG-003",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "Digital commodity dealers MUST register with the CFTC",
+    "requirement_type": "OBLIGATION",
+    "agent": "digital_commodity_dealers",
+    "action": "register_with_the_cftc",
+    "conditions": [
+      "the CFTC"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "REG-004",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "Issuers MUST disclose information about blockchain system maturity",
+    "requirement_type": "OBLIGATION",
+    "agent": "issuers",
+    "action": "disclose_information_about_blockchain_system_maturity",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "REG-005",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "Issuers MUST disclose financial condition",
+    "requirement_type": "OBLIGATION",
+    "agent": "issuers",
+    "action": "disclose_financial_condition",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "REG-006",
+    "section": "REGISTRATION_AND_REPORTING",
+    "text": "SEC MUST certify blockchain systems deemed mature",
+    "requirement_type": "OBLIGATION",
+    "agent": "sec",
+    "action": "certify_blockchain_systems_deemed_mature",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-001",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Exchanges MUST implement trade monitoring",
+    "requirement_type": "OBLIGATION",
+    "agent": "exchanges",
+    "action": "implement_trade_monitoring",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-002",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Exchanges MUST maintain recordkeeping systems",
+    "requirement_type": "OBLIGATION",
+    "agent": "exchanges",
+    "action": "maintain_recordkeeping_systems",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-003",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Exchanges MUST NOT commingle customer assets",
+    "requirement_type": "PROHIBITION",
+    "agent": "exchanges",
+    "action": "commingle_customer_assets",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-004",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Brokers and dealers MUST implement risk management",
+    "requirement_type": "OBLIGATION",
+    "agent": "brokers",
+    "action": "implement_risk_management",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-005",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Brokers and dealers MUST maintain reporting duties",
+    "requirement_type": "OBLIGATION",
+    "agent": "brokers",
+    "action": "maintain_reporting_duties",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-006",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Brokers and dealers MUST maintain capital obligations",
+    "requirement_type": "OBLIGATION",
+    "agent": "brokers",
+    "action": "maintain_capital_obligations",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-007",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Exchanges and brokers MUST implement customer protection measures",
+    "requirement_type": "OBLIGATION",
+    "agent": "exchanges",
+    "action": "implement_customer_protection_measures",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "TRD-008",
+    "section": "TRADE_MARKET_INTEGRITY",
+    "text": "Exchanges and brokers MUST implement custody rules subject to federal or state supervision",
+    "requirement_type": "OBLIGATION",
+    "agent": "exchanges",
+    "action": "implement_custody_rules",
+    "conditions": [
+      "federal or state supervision"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "GOV-001",
+    "section": "DECENTRALIZED_GOVERNANCE",
+    "text": "Decentralized blockchain systems MUST NOT be treated as controlled by a single entity",
+    "requirement_type": "PROHIBITION",
+    "agent": "unspecified_agent",
+    "action": "be_treated_as_controlled",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "GOV-002",
+    "section": "DECENTRALIZED_GOVERNANCE",
+    "text": "Changes in control or governance REQUIRE updated certification or reporting",
+    "requirement_type": "OBLIGATION",
+    "agent": "unspecified_agent",
+    "action": "updated_certification_or_reporting",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "GOV-003",
+    "section": "DECENTRALIZED_GOVERNANCE",
+    "text": "Denied certifications MUST be subject to public review",
+    "requirement_type": "OBLIGATION",
+    "agent": "unspecified_agent",
+    "action": "be",
+    "conditions": [
+      "public review"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "RUL-001",
+    "section": "RULEMAKING_IMPLEMENTATION",
+    "text": "SEC and CFTC MUST develop rules within 270 days of enactment",
+    "requirement_type": "OBLIGATION",
+    "agent": "sec",
+    "action": "develop_rules",
+    "conditions": [],
+    "temporal_constraint": "within 270 days"
+  },
+  {
+    "requirement_id": "RUL-002",
+    "section": "RULEMAKING_IMPLEMENTATION",
+    "text": "SEC and CFTC MUST issue rules within 270 days of enactment",
+    "requirement_type": "OBLIGATION",
+    "agent": "sec",
+    "action": "issue_rules",
+    "conditions": [],
+    "temporal_constraint": "within 270 days"
+  },
+  {
+    "requirement_id": "RUL-003",
+    "section": "RULEMAKING_IMPLEMENTATION",
+    "text": "Expedited registration procedures MUST be available during transition",
+    "requirement_type": "OBLIGATION",
+    "agent": "unspecified_agent",
+    "action": "be_available_during_transition",
+    "conditions": [
+      "transition"
+    ],
+    "temporal_constraint": "during transition"
+  },
+  {
+    "requirement_id": "AML-001",
+    "section": "AML_BANK_SECRECY",
+    "text": "Digital asset market intermediaries MUST comply with Bank Secrecy Act",
+    "requirement_type": "OBLIGATION",
+    "agent": "digital_asset_market_intermediaries",
+    "action": "comply_with_bank_secrecy_act",
+    "conditions": [
+      "Bank Secrecy Act"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "AML-002",
+    "section": "AML_BANK_SECRECY",
+    "text": "Registered entities MUST implement anti-money laundering programs",
+    "requirement_type": "OBLIGATION",
+    "agent": "registered_entities",
+    "action": "implement_anti-money_laundering_programs",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "AML-003",
+    "section": "AML_BANK_SECRECY",
+    "text": "Registered entities MUST implement counter-terrorism financing programs",
+    "requirement_type": "OBLIGATION",
+    "agent": "registered_entities",
+    "action": "implement_counter-terrorism_financing_programs",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "JUR-001",
+    "section": "JURISDICTION",
+    "text": "Digital commodities on mature blockchains MAY be exempt from SEC registration",
+    "requirement_type": "PERMISSION",
+    "agent": "sec",
+    "action": "be_exempt_from_sec_registration",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "JUR-002",
+    "section": "JURISDICTION",
+    "text": "SEC maintains oversight for broker and dealer activities on national securities exchanges",
+    "requirement_type": "OBLIGATION",
+    "agent": "sec",
+    "action": "sec_maintains_oversight_for_broker_and_dealer_acti",
+    "conditions": [
+      "broker"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "JUR-003",
+    "section": "JURISDICTION",
+    "text": "SEC maintains oversight for activities on alternative trading systems",
+    "requirement_type": "OBLIGATION",
+    "agent": "sec",
+    "action": "sec_maintains_oversight_for_activities_on_alternat",
+    "conditions": [
+      "activities on alternative trading systems"
+    ],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "FED-001",
+    "section": "FEDERAL_RESERVE_RESTRICTIONS",
+    "text": "Federal Reserve banks MUST NOT offer central bank digital currencies directly to individuals",
+    "requirement_type": "PROHIBITION",
+    "agent": "federal_reserve_banks",
+    "action": "offer_central_bank_digital_currencies_directly_to_individuals",
+    "conditions": [],
+    "temporal_constraint": null
+  },
+  {
+    "requirement_id": "FED-002",
+    "section": "FEDERAL_RESERVE_RESTRICTIONS",
+    "text": "Federal Reserve banks MUST NOT use central bank digital currency for monetary policy operations",
+    "requirement_type": "PROHIBITION",
+    "agent": "federal_reserve_banks",
+    "action": "use_central_bank_digital_currency_for_monetary_policy_operations",
+    "conditions": [
+      "monetary policy operations"
+    ],
+    "temporal_constraint": null
+  }
+]
