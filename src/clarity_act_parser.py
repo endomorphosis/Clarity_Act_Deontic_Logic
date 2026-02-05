@@ -198,30 +198,45 @@ class ClarityActParser:
             if match:
                 action = match.group(1).strip()
                 # Clean up and normalize
-                action = action.lower().replace(" ", "_")[:100]
+                action = action.lower().replace(" ", "_").replace("-", "_")[:100]
                 return action
         
         # Fallback: use a cleaned version of the text
-        return text.lower().replace(" ", "_")[:50]
+        return text.lower().replace(" ", "_").replace("-", "_")[:50]
     
     def _extract_conditions(self, text: str) -> List[str]:
         """Extract conditions under which the requirement applies."""
+        # Maximum number of conditions to extract per requirement
+        MAX_CONDITIONS_PER_REQUIREMENT = 3
+        
         conditions = []
         
         # Look for condition keywords
         condition_patterns = [
             r"(?:if|when|where|provided that|subject to)\s+([^.]+)",
-            r"(?:with|during|for)\s+([^.]+?)(?:\s+(?:and|or)|\.|$)"
+        ]
+        
+        # Avoid extracting "with the CFTC/SEC" as conditions
+        avoid_patterns = [
+            r"with the (CFTC|SEC|Federal Reserve)",
+            r"by the (CFTC|SEC)",
         ]
         
         for pattern in condition_patterns:
             matches = re.finditer(pattern, text, re.IGNORECASE)
             for match in matches:
                 condition = match.group(1).strip()[:100]
-                if condition and len(condition) > 5:
+                # Skip if it matches an avoid pattern
+                is_valid = True
+                for avoid_pattern in avoid_patterns:
+                    if re.search(avoid_pattern, condition, re.IGNORECASE):
+                        is_valid = False
+                        break
+                
+                if is_valid and condition and len(condition) > 5:
                     conditions.append(condition)
         
-        return conditions[:3]  # Limit to 3 conditions for clarity
+        return conditions[:MAX_CONDITIONS_PER_REQUIREMENT]
     
     def _extract_temporal_constraint(self, text: str) -> str:
         """Extract temporal constraints (deadlines, timeframes)."""
@@ -464,7 +479,24 @@ class ClarityActParser:
         output += "-- Requirements\n"
         for formula in self.deontic_formulas[:10]:  # Limit for readability
             req_id = formula['requirement_id'].replace('-', '_')
-            agent_clean = formula['agent'].replace('_', ' ').title().replace(' ', '')
+            
+            # Map agent names to match Agent type definition
+            agent_mapping = {
+                'digital_commodity_exchanges': 'DigitalCommodityExchange',
+                'exchanges': 'DigitalCommodityExchange',
+                'digital_commodity_brokers': 'DigitalCommodityBroker',
+                'brokers': 'DigitalCommodityBroker',
+                'digital_commodity_dealers': 'DigitalCommodityDealer',
+                'dealers': 'DigitalCommodityDealer',
+                'issuers': 'Issuer',
+                'sec': 'SEC',
+                'cftc': 'CFTC',
+                'sec_and_cftc': 'SEC',  # Use SEC as representative
+                'federal_reserve_banks': 'FederalReserveBank',
+            }
+            
+            agent_key = formula['agent']
+            agent_clean = agent_mapping.get(agent_key, 'Issuer')  # Default to Issuer if unknown
             action_clean = formula['action'][:50].replace('-', '_')
             
             output += f"-- {formula['natural_language']}\n"

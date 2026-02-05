@@ -21,13 +21,13 @@ Definition Forbidden (action : Prop) : Prop := ~action.
 Definition Permitted (action : Prop) : Prop := action \/ ~action.
 
 (* Requirements *)
-(* The digital commodity exchanges is obligated to register with the cftc, provided that the CFTC. *)
+(* The digital commodity exchanges is obligated to register with the cftc. *)
 Axiom REG_001 : Obligatory True.
 
-(* The digital commodity brokers is obligated to register with the cftc, provided that the CFTC. *)
+(* The digital commodity brokers is obligated to register with the cftc. *)
 Axiom REG_002 : Obligatory True.
 
-(* The digital commodity dealers is obligated to register with the cftc, provided that the CFTC. *)
+(* The digital commodity dealers is obligated to register with the cftc. *)
 Axiom REG_003 : Obligatory True.
 
 (* The issuers is obligated to disclose information about blockchain system maturity. *)

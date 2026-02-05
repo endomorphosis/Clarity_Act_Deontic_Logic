@@ -6,9 +6,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "digital_commodity_exchanges",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -18,9 +16,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "digital_commodity_brokers",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -30,9 +26,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "digital_commodity_dealers",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -206,9 +200,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "unspecified_agent",
     "action": "be_available_during_transition",
-    "conditions": [
-      "transition"
-    ],
+    "conditions": [],
     "temporal_constraint": "during transition"
   },
   {
@@ -218,9 +210,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "digital_asset_market_intermediaries",
     "action": "comply_with_bank_secrecy_act",
-    "conditions": [
-      "Bank Secrecy Act"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -229,7 +219,7 @@
     "text": "Registered entities MUST implement anti-money laundering programs",
     "requirement_type": "OBLIGATION",
     "agent": "registered_entities",
-    "action": "implement_anti-money_laundering_programs",
+    "action": "implement_anti_money_laundering_programs",
     "conditions": [],
     "temporal_constraint": null
   },
@@ -239,7 +229,7 @@
     "text": "Registered entities MUST implement counter-terrorism financing programs",
     "requirement_type": "OBLIGATION",
     "agent": "registered_entities",
-    "action": "implement_counter-terrorism_financing_programs",
+    "action": "implement_counter_terrorism_financing_programs",
     "conditions": [],
     "temporal_constraint": null
   },
@@ -260,9 +250,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "sec",
     "action": "sec_maintains_oversight_for_broker_and_dealer_acti",
-    "conditions": [
-      "broker"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -272,9 +260,7 @@
     "requirement_type": "OBLIGATION",
     "agent": "sec",
     "action": "sec_maintains_oversight_for_activities_on_alternat",
-    "conditions": [
-      "activities on alternative trading systems"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   },
   {
@@ -294,9 +280,7 @@
     "requirement_type": "PROHIBITION",
     "agent": "federal_reserve_banks",
     "action": "use_central_bank_digital_currency_for_monetary_policy_operations",
-    "conditions": [
-      "monetary policy operations"
-    ],
+    "conditions": [],
     "temporal_constraint": null
   }
 ]

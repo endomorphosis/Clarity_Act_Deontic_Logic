@@ -19,13 +19,13 @@
 (define-fun permitted ((agent Agent) (action Bool)) Bool true)
 
 ; Requirements
-; The digital commodity exchanges is obligated to register with the cftc, provided that the CFTC.
+; The digital commodity exchanges is obligated to register with the cftc.
 (assert (obligatory digital_commodity_exchanges true))
 
-; The digital commodity brokers is obligated to register with the cftc, provided that the CFTC.
+; The digital commodity brokers is obligated to register with the cftc.
 (assert (obligatory digital_commodity_brokers true))
 
-; The digital commodity dealers is obligated to register with the cftc, provided that the CFTC.
+; The digital commodity dealers is obligated to register with the cftc.
 (assert (obligatory digital_commodity_dealers true))
 
 ; The issuers is obligated to disclose information about blockchain system maturity.

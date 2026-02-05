@@ -5,12 +5,10 @@
     "operator": "O",
     "agent": "digital_commodity_exchanges",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[digital_commodity_exchanges]((the_CFTC) \u2192 register_with_the_cftc)",
-    "natural_language": "The digital commodity exchanges is obligated to register with the cftc, provided that the CFTC.",
+    "formal_notation": "O[digital_commodity_exchanges](register_with_the_cftc)",
+    "natural_language": "The digital commodity exchanges is obligated to register with the cftc.",
     "source_text": "Digital commodity exchanges MUST register with the CFTC"
   },
   {
@@ -19,12 +17,10 @@
     "operator": "O",
     "agent": "digital_commodity_brokers",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[digital_commodity_brokers]((the_CFTC) \u2192 register_with_the_cftc)",
-    "natural_language": "The digital commodity brokers is obligated to register with the cftc, provided that the CFTC.",
+    "formal_notation": "O[digital_commodity_brokers](register_with_the_cftc)",
+    "natural_language": "The digital commodity brokers is obligated to register with the cftc.",
     "source_text": "Digital commodity brokers MUST register with the CFTC"
   },
   {
@@ -33,12 +29,10 @@
     "operator": "O",
     "agent": "digital_commodity_dealers",
     "action": "register_with_the_cftc",
-    "conditions": [
-      "the CFTC"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[digital_commodity_dealers]((the_CFTC) \u2192 register_with_the_cftc)",
-    "natural_language": "The digital commodity dealers is obligated to register with the cftc, provided that the CFTC.",
+    "formal_notation": "O[digital_commodity_dealers](register_with_the_cftc)",
+    "natural_language": "The digital commodity dealers is obligated to register with the cftc.",
     "source_text": "Digital commodity dealers MUST register with the CFTC"
   },
   {
@@ -243,12 +237,10 @@
     "operator": "O",
     "agent": "unspecified_agent",
     "action": "be_available_during_transition",
-    "conditions": [
-      "transition"
-    ],
+    "conditions": [],
     "temporal_constraint": "during transition",
-    "formal_notation": "O[unspecified_agent]((transition) \u2192 be_available_during_transition)",
-    "natural_language": "The unspecified agent is obligated to be available during transition, provided that transition.",
+    "formal_notation": "O[unspecified_agent](be_available_during_transition)",
+    "natural_language": "The unspecified agent is obligated to be available during transition.",
     "source_text": "Expedited registration procedures MUST be available during transition"
   },
   {
@@ -257,12 +249,10 @@
     "operator": "O",
     "agent": "digital_asset_market_intermediaries",
     "action": "comply_with_bank_secrecy_act",
-    "conditions": [
-      "Bank Secrecy Act"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[digital_asset_market_intermediaries]((Bank_Secrecy_Act) \u2192 comply_with_bank_secrecy_act)",
-    "natural_language": "The digital asset market intermediaries is obligated to comply with bank secrecy act, provided that Bank Secrecy Act.",
+    "formal_notation": "O[digital_asset_market_intermediaries](comply_with_bank_secrecy_act)",
+    "natural_language": "The digital asset market intermediaries is obligated to comply with bank secrecy act.",
     "source_text": "Digital asset market intermediaries MUST comply with Bank Secrecy Act"
   },
   {
@@ -270,11 +260,11 @@
     "section": "AML_BANK_SECRECY",
     "operator": "O",
     "agent": "registered_entities",
-    "action": "implement_anti-money_laundering_programs",
+    "action": "implement_anti_money_laundering_programs",
     "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[registered_entities](implement_anti-money_laundering_programs)",
-    "natural_language": "The registered entities is obligated to implement anti-money laundering programs.",
+    "formal_notation": "O[registered_entities](implement_anti_money_laundering_programs)",
+    "natural_language": "The registered entities is obligated to implement anti money laundering programs.",
     "source_text": "Registered entities MUST implement anti-money laundering programs"
   },
   {
@@ -282,11 +272,11 @@
     "section": "AML_BANK_SECRECY",
     "operator": "O",
     "agent": "registered_entities",
-    "action": "implement_counter-terrorism_financing_programs",
+    "action": "implement_counter_terrorism_financing_programs",
     "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[registered_entities](implement_counter-terrorism_financing_programs)",
-    "natural_language": "The registered entities is obligated to implement counter-terrorism financing programs.",
+    "formal_notation": "O[registered_entities](implement_counter_terrorism_financing_programs)",
+    "natural_language": "The registered entities is obligated to implement counter terrorism financing programs.",
     "source_text": "Registered entities MUST implement counter-terrorism financing programs"
   },
   {
@@ -307,12 +297,10 @@
     "operator": "O",
     "agent": "sec",
     "action": "sec_maintains_oversight_for_broker_and_dealer_acti",
-    "conditions": [
-      "broker"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[sec]((broker) \u2192 sec_maintains_oversight_for_broker_and_dealer_acti)",
-    "natural_language": "The sec is obligated to sec maintains oversight for broker and dealer acti, provided that broker.",
+    "formal_notation": "O[sec](sec_maintains_oversight_for_broker_and_dealer_acti)",
+    "natural_language": "The sec is obligated to sec maintains oversight for broker and dealer acti.",
     "source_text": "SEC maintains oversight for broker and dealer activities on national securities exchanges"
   },
   {
@@ -321,12 +309,10 @@
     "operator": "O",
     "agent": "sec",
     "action": "sec_maintains_oversight_for_activities_on_alternat",
-    "conditions": [
-      "activities on alternative trading systems"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "O[sec]((activities_on_alternative_trad) \u2192 sec_maintains_oversight_for_activities_on_alternat)",
-    "natural_language": "The sec is obligated to sec maintains oversight for activities on alternat, provided that activities on alternative trading systems.",
+    "formal_notation": "O[sec](sec_maintains_oversight_for_activities_on_alternat)",
+    "natural_language": "The sec is obligated to sec maintains oversight for activities on alternat.",
     "source_text": "SEC maintains oversight for activities on alternative trading systems"
   },
   {
@@ -347,12 +333,10 @@
     "operator": "F",
     "agent": "federal_reserve_banks",
     "action": "use_central_bank_digital_currency_for_monetary_policy_operations",
-    "conditions": [
-      "monetary policy operations"
-    ],
+    "conditions": [],
     "temporal_constraint": null,
-    "formal_notation": "F[federal_reserve_banks]((monetary_policy_operations) \u2192 use_central_bank_digital_currency_for_monetary_policy_operations)",
-    "natural_language": "The federal reserve banks is forbidden from use central bank digital currency for monetary policy operations, provided that monetary policy operations.",
+    "formal_notation": "F[federal_reserve_banks](use_central_bank_digital_currency_for_monetary_policy_operations)",
+    "natural_language": "The federal reserve banks is forbidden from use central bank digital currency for monetary policy operations.",
     "source_text": "Federal Reserve banks MUST NOT use central bank digital currency for monetary policy operations"
   }
 ]
