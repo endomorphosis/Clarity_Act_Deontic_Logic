@@ -19,28 +19,38 @@ from pathlib import Path
 from typing import Dict, List, Any, Tuple
 from datetime import datetime
 
-# Add the repository root to the path so the bundled `ipfs_datasets_py/` package
-# can be imported as `ipfs_datasets_py.*` when present.
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Add the `ipfs_datasets_py` submodule root to the path so the actual Python
+# package at `ipfs_datasets_py/ipfs_datasets_py/` is importable as
+# `ipfs_datasets_py.*`.
+sys.path.insert(0, str(Path(__file__).parent.parent / "ipfs_datasets_py"))
 
 # Import deontic logic components
 try:
-    from ipfs_datasets_py.logic_integration import (
+    from ipfs_datasets_py.logic_integration.deontic_logic_converter import (
         DeonticLogicConverter,
-        LegalDomainKnowledge,
         ConversionContext,
+    )
+    from ipfs_datasets_py.logic_integration.legal_domain_knowledge import (
+        LegalDomainKnowledge,
         LegalDomain,
+    )
+    from ipfs_datasets_py.logic_integration.logic_translation_core import (
         LeanTranslator,
         CoqTranslator,
         SMTTranslator,
         LogicTranslationTarget,
+    )
+    from ipfs_datasets_py.logic_integration.deontic_logic_core import (
         DeonticFormula,
-        DeonticOperator
+        DeonticOperator,
     )
     LOGIC_AVAILABLE = True
 except ImportError as e:
     print(f"Warning: Could not import logic_integration: {e}")
     print("Will create mock implementations for demonstration")
+    LOGIC_AVAILABLE = False
+except SystemExit as e:
+    print(f"Warning: ipfs_datasets_py import triggered SystemExit({e.code}); using mock implementations")
     LOGIC_AVAILABLE = False
     
     # Create mock classes
