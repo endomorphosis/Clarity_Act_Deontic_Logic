@@ -13,12 +13,15 @@ and generates formal logic representations in multiple theorem prover formats (L
 import sys
 import json
 import re
+import argparse
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Dict, List, Any, Tuple
 from datetime import datetime
 
-# Add the submodule to the path
-sys.path.insert(0, str(Path(__file__).parent.parent / "ipfs_datasets_py"))
+# Add the repository root to the path so the bundled `ipfs_datasets_py/` package
+# can be imported as `ipfs_datasets_py.*` when present.
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Import deontic logic components
 try:
@@ -113,35 +116,185 @@ class ClarityActParser:
             List of extracted requirements
         """
         print(f"Parsing CLARITY Act from: {self.document_path}")
-        
-        with open(self.document_path, 'r') as f:
-            content = f.read()
-        
-        # Parse requirements by sections
-        self._parse_registration_requirements(content)
-        self._parse_trade_integrity_requirements(content)
-        self._parse_governance_requirements(content)
-        self._parse_rulemaking_requirements(content)
-        self._parse_aml_requirements(content)
-        self._parse_jurisdiction_requirements(content)
-        self._parse_federal_reserve_restrictions(content)
-        
+
+        content = self._load_document_text(self.document_path)
+
+        if self._looks_like_summary(content) and self.document_path.name.endswith("summary.txt"):
+            self._parse_registration_requirements(content)
+            self._parse_trade_integrity_requirements(content)
+            self._parse_governance_requirements(content)
+            self._parse_rulemaking_requirements(content)
+            self._parse_aml_requirements(content)
+            self._parse_jurisdiction_requirements(content)
+            self._parse_federal_reserve_restrictions(content)
+        else:
+            self._parse_full_text_requirements(content)
+
         print(f"Extracted {len(self.requirements)} requirements")
         return self.requirements
+
+    def _load_document_text(self, document_path: Path) -> str:
+        suffix = document_path.suffix.lower()
+
+        if suffix in {".txt", ".text"}:
+            return document_path.read_text(errors="ignore")
+
+        if suffix == ".xml":
+            raw = document_path.read_text(errors="ignore")
+            raw = re.sub(r"<!DOCTYPE[^>]*>\s*", "", raw, flags=re.IGNORECASE)
+            try:
+                root = ET.fromstring(raw)
+            except ET.ParseError:
+                cleaned_lines = [line for line in raw.splitlines() if not line.strip().upper().startswith("<!DOCTYPE")]
+                root = ET.fromstring("\n".join(cleaned_lines))
+
+            text_parts: List[str] = []
+            for element_text in root.itertext():
+                t = element_text.strip()
+                if not t:
+                    continue
+                text_parts.append(t)
+            return "\n".join(text_parts)
+
+        if suffix == ".pdf":
+            try:
+                import pdfplumber  # type: ignore
+            except Exception:
+                raise RuntimeError("PDF parsing requested, but pdfplumber is not available")
+
+            pages: List[str] = []
+            with pdfplumber.open(str(document_path)) as pdf:
+                for page in pdf.pages:
+                    page_text = page.extract_text() or ""
+                    if page_text.strip():
+                        pages.append(page_text)
+            return "\n\n".join(pages)
+
+        return document_path.read_text(errors="ignore")
+
+    def _looks_like_summary(self, content: str) -> bool:
+        return "SUMMARY OF KEY REQUIREMENTS" in content.upper()
+
+    def _parse_full_text_requirements(self, content: str):
+        """Parse the full bill text and extract deontic (normative) statements."""
+
+        current_section = "FULL_TEXT"
+        requirement_counter = 0
+        seen: set[str] = set()
+
+        normalized = content.replace("\u2013", "-").replace("\u2014", "-")
+        lines = [ln.strip() for ln in normalized.splitlines()]
+
+        paragraphs: List[Tuple[str, str]] = []
+        buffer: List[str] = []
+        for line in lines:
+            if not line:
+                if buffer:
+                    paragraphs.append((current_section, " ".join(buffer)))
+                    buffer = []
+                continue
+
+            # Bill section headers typically use "SEC.". Avoid treating references like
+            # "Section 5312" (U.S. Code amendments) as CLARITY Act section boundaries.
+            section_match = re.match(r"^SEC\.\s*([0-9]{1,4})(?:\b|\.)", line, flags=re.IGNORECASE)
+            # Congress bill XML commonly represents section numbers in <enum> nodes like "411.".
+            enum_section_match = re.match(r"^([0-9]{1,4})\.\s*$", line)
+            title_match = re.match(r"^TITLE\s+[IVXLC]+\b", line, flags=re.IGNORECASE)
+            if section_match:
+                if buffer:
+                    paragraphs.append((current_section, " ".join(buffer)))
+                    buffer = []
+                current_section = f"SEC{section_match.group(1)}"
+                continue
+            if enum_section_match:
+                if buffer:
+                    paragraphs.append((current_section, " ".join(buffer)))
+                    buffer = []
+                current_section = f"SEC{enum_section_match.group(1)}"
+                continue
+            if title_match:
+                if buffer:
+                    paragraphs.append((current_section, " ".join(buffer)))
+                    buffer = []
+                current_section = title_match.group(0).strip().upper().replace(" ", "_")
+                continue
+
+            buffer.append(line)
+
+        if buffer:
+            paragraphs.append((current_section, " ".join(buffer)))
+
+        for section, paragraph in paragraphs:
+            for sentence in self._split_into_sentences(paragraph):
+                sentence_clean = self._normalize_sentence(sentence)
+                if not sentence_clean:
+                    continue
+                if not self._is_normative_sentence(sentence_clean):
+                    continue
+                fingerprint = re.sub(r"\s+", " ", sentence_clean.lower()).strip()
+                if fingerprint in seen:
+                    continue
+                seen.add(fingerprint)
+
+                requirement_counter += 1
+                req_id = f"{section}-{requirement_counter:05d}"
+                req = self._extract_requirement(sentence_clean, section, req_id)
+                self.requirements.append(req)
+
+    def _split_into_sentences(self, text: str) -> List[str]:
+        text = re.sub(r"\s+", " ", text).strip()
+        if not text:
+            return []
+        chunks = re.split(r"(?<=[\.;])\s+", text)
+        return [c.strip() for c in chunks if c and c.strip()]
+
+    def _normalize_sentence(self, sentence: str) -> str:
+        sentence = sentence.strip()
+        sentence = re.sub(r"\s+", " ", sentence)
+        sentence = sentence.strip(" \t\r\n\u00a0")
+        if len(sentence) < 12:
+            return ""
+        return sentence
+
+    def _is_normative_sentence(self, sentence: str) -> bool:
+        s = sentence.lower()
+
+        # Exclude structural/boilerplate clauses that are technically modal but not
+        # regulatory requirements.
+        if re.search(r"\b(table of contents|short title)\b", s):
+            return False
+        if "may be cited as" in s:
+            return False
+        if "sense of congress" in s:
+            return False
+        if s.startswith("congress finds"):
+            return False
+
+        if re.search(r"\b(shall|must|may|required to|may not|shall not|must not)\b", s) is None and "unlawful" not in s:
+            return False
+
+        if re.search(r"\b(shall mean|means)\b", s):
+            if "term" in s or "defined" in s:
+                return False
+
+        if re.search(r"\b(is amended|is redesignated|by striking|by inserting|by adding at the end)\b", s):
+            return False
+
+        return True
     
     def _extract_requirement(self, text: str, section: str, req_id: str) -> ClarityActRequirement:
         """Extract structured requirement from text."""
         
-        # Determine requirement type
-        if " MUST " in text or " SHALL " in text or " REQUIRE" in text:
-            if " MUST NOT " in text or " SHALL NOT " in text:
-                req_type = "PROHIBITION"
-            else:
-                req_type = "OBLIGATION"
-        elif " MAY " in text:
+        lowered = text.lower()
+
+        if re.search(r"\b(must not|shall not|may not)\b", lowered) or "unlawful" in lowered:
+            req_type = "PROHIBITION"
+        elif re.search(r"\b(may)\b", lowered):
             req_type = "PERMISSION"
+        elif re.search(r"\b(must|shall|required to|requires|required)\b", lowered):
+            req_type = "OBLIGATION"
         else:
-            req_type = "OBLIGATION"  # Default
+            req_type = "OBLIGATION"
         
         # Extract agent (who has the obligation/permission)
         agent = self._extract_agent(text)
@@ -168,6 +321,10 @@ class ClarityActParser:
     
     def _extract_agent(self, text: str) -> str:
         """Extract the agent (entity with obligation/permission)."""
+        unlawful_match = re.search(r"unlawful\s+for\s+(.+?)\s+to\s+", text, re.IGNORECASE)
+        if unlawful_match:
+            return self._normalize_identifier(unlawful_match.group(1))
+
         agents = [
             "Digital commodity exchanges", "Exchanges",
             "Digital commodity brokers", "Brokers",
@@ -180,17 +337,35 @@ class ClarityActParser:
         ]
         
         for agent in agents:
-            if agent in text:
+            if re.search(rf"\b{re.escape(agent)}\b", text, flags=re.IGNORECASE):
                 return agent.lower().replace(" ", "_")
+
+        subject_match = re.match(r"^(.+?)\s+(shall\s+not|shall|must\s+not|must|may\s+not|may|required\s+to|requires?)\b", text, flags=re.IGNORECASE)
+        if subject_match:
+            candidate = subject_match.group(1)
+            candidate = re.sub(r"^\(?[A-Za-z0-9]{1,4}\)?\s*[\).\-:]\s+", "", candidate)
+            candidate = re.sub(r"^(except|unless|notwithstanding)\b.*?\,\s+", "", candidate, flags=re.IGNORECASE)
+            candidate = re.sub(r"^(for\s+purposes\s+of|with\s+respect\s+to)\b.*?\,\s+", "", candidate, flags=re.IGNORECASE)
+            return self._normalize_identifier(candidate)
         
         return "unspecified_agent"
+
+    def _normalize_identifier(self, text: str) -> str:
+        text = text.strip().strip("\"'“”‘’()").strip()
+        text = re.sub(r"\s+", " ", text)
+        words = text.split(" ")[:12]
+        text = " ".join(words)
+        text = re.sub(r"[^a-zA-Z0-9]+", "_", text).strip("_")
+        text = re.sub(r"_+", "_", text)
+        return text.lower() if text else "unspecified_agent"
     
     def _extract_action(self, text: str) -> str:
         """Extract the action that must/may be performed."""
         # Try to extract the verb phrase after MUST/SHALL/MAY
         patterns = [
-            r"(?:MUST|SHALL|REQUIRE[DS]?)\s+(?:NOT\s+)?([^.]+?)(?:\s+(?:within|by|before|if|provided|subject)|\.|$)",
-            r"MAY\s+([^.]+?)(?:\s+(?:if|provided|subject)|\.|$)"
+            r"(?:MUST|SHALL|REQUIRE[DS]?|REQUIRED\s+TO)\s+(?:NOT\s+)?([^.]+?)(?:\s+(?:within|by|before|if|provided|subject|except)|\.|;|$)",
+            r"MAY(?:\s+NOT)?\s+([^.]+?)(?:\s+(?:if|provided|subject|except)|\.|;|$)",
+            r"unlawful\s+for\s+.+?\s+to\s+([^.]+?)(?:\.|;|$)"
         ]
         
         for pattern in patterns:
@@ -198,11 +373,12 @@ class ClarityActParser:
             if match:
                 action = match.group(1).strip()
                 # Clean up and normalize
-                action = action.lower().replace(" ", "_").replace("-", "_")[:100]
+                action = re.sub(r"\s+", " ", action)
+                action = self._normalize_identifier(action)[:120]
                 return action
         
         # Fallback: use a cleaned version of the text
-        return text.lower().replace(" ", "_").replace("-", "_")[:50]
+        return self._normalize_identifier(text)[:80]
     
     def _extract_conditions(self, text: str) -> List[str]:
         """Extract conditions under which the requirement applies."""
@@ -427,11 +603,11 @@ class ClarityActParser:
         """Build formal deontic logic notation."""
         
         # Clean action for formal notation
-        action_clean = action.replace(" ", "_")
+        action_clean = self._normalize_identifier(action)
         
         if conditions:
             # Format: O[agent]((condition1 ∧ condition2) → action)
-            cond_str = " ∧ ".join([c[:30].replace(" ", "_") for c in conditions])
+            cond_str = " ∧ ".join([self._normalize_identifier(c)[:30] for c in conditions])
             return f"{operator}[{agent}](({cond_str}) → {action_clean})"
         else:
             # Format: O[agent](action)
@@ -461,56 +637,24 @@ class ClarityActParser:
         output += "-- Digital Asset Market Clarity Act of 2025\n\n"
         output += "import Mathlib.Logic.Basic\n\n"
         output += "namespace ClarityAct\n\n"
-        output += "-- Agent types\n"
-        output += "inductive Agent\n"
-        output += "  | DigitalCommodityExchange\n"
-        output += "  | DigitalCommodityBroker\n"
-        output += "  | DigitalCommodityDealer\n"
-        output += "  | Issuer\n"
-        output += "  | SEC\n"
-        output += "  | CFTC\n"
-        output += "  | FederalReserveBank\n\n"
-        
+        output += "abbrev Agent := String\n\n"
         output += "-- Deontic operators\n"
         output += "def Obligatory (agent : Agent) (action : Prop) : Prop := action\n"
         output += "def Forbidden (agent : Agent) (action : Prop) : Prop := ¬action\n"
         output += "def Permitted (agent : Agent) (action : Prop) : Prop := action ∨ ¬action\n\n"
-        
+
         output += "-- Requirements\n"
-        for formula in self.deontic_formulas[:10]:  # Limit for readability
-            req_id = formula['requirement_id'].replace('-', '_')
-            
-            # Map agent names to match Agent type definition
-            agent_mapping = {
-                'digital_commodity_exchanges': 'DigitalCommodityExchange',
-                'exchanges': 'DigitalCommodityExchange',
-                'digital_commodity_brokers': 'DigitalCommodityBroker',
-                'brokers': 'DigitalCommodityBroker',
-                'digital_commodity_dealers': 'DigitalCommodityDealer',
-                'dealers': 'DigitalCommodityDealer',
-                'issuers': 'Issuer',
-                'sec': 'SEC',
-                'cftc': 'CFTC',
-                'sec_and_cftc': 'SEC',  # Use SEC as representative
-                'federal_reserve_banks': 'FederalReserveBank',
-            }
-            
-            agent_key = formula['agent']
-            agent_clean = agent_mapping.get(agent_key, 'Issuer')  # Default to Issuer if unknown
-            action_clean = formula['action'][:50].replace('-', '_')
-            
+        for formula in self.deontic_formulas:
+            req_id = self._normalize_identifier(formula['requirement_id']).upper()
             output += f"-- {formula['natural_language']}\n"
-            output += f"axiom {req_id}_{action_clean} : "
-            
+            output += f"axiom {req_id} : "
             if formula['operator'] == 'O':
-                output += f"Obligatory Agent.{agent_clean} (True)\n"
+                output += "Obligatory \"" + formula['agent'] + "\" (True)\n\n"
             elif formula['operator'] == 'F':
-                output += f"Forbidden Agent.{agent_clean} (True)\n"
+                output += "Forbidden \"" + formula['agent'] + "\" (True)\n\n"
             else:
-                output += f"Permitted Agent.{agent_clean} (True)\n"
-            
-            output += "\n"
-        
+                output += "Permitted \"" + formula['agent'] + "\" (True)\n\n"
+
         output += "end ClarityAct\n"
         return output
     
@@ -518,39 +662,27 @@ class ClarityActParser:
         """Generate Coq theorem prover output."""
         output = "(* CLARITY Act Requirements in Coq *)\n"
         output += "(* Digital Asset Market Clarity Act of 2025 *)\n\n"
-        output += "Require Import Coq.Logic.Classical_Prop.\n\n"
+        output += "Require Import Coq.Logic.Classical_Prop.\n"
+        output += "Require Import Coq.Strings.String.\n\n"
         output += "Module ClarityAct.\n\n"
-        
-        output += "(* Agent types *)\n"
-        output += "Inductive Agent : Type :=\n"
-        output += "  | DigitalCommodityExchange : Agent\n"
-        output += "  | DigitalCommodityBroker : Agent\n"
-        output += "  | DigitalCommodityDealer : Agent\n"
-        output += "  | Issuer : Agent\n"
-        output += "  | SEC : Agent\n"
-        output += "  | CFTC : Agent\n"
-        output += "  | FederalReserveBank : Agent.\n\n"
+        output += "Definition Agent := string.\n\n"
         
         output += "(* Deontic operators *)\n"
-        output += "Definition Obligatory (action : Prop) : Prop := action.\n"
-        output += "Definition Forbidden (action : Prop) : Prop := ~action.\n"
-        output += "Definition Permitted (action : Prop) : Prop := action \\/ ~action.\n\n"
+        output += "Definition Obligatory (_agent : Agent) (action : Prop) : Prop := action.\n"
+        output += "Definition Forbidden (_agent : Agent) (action : Prop) : Prop := ~action.\n"
+        output += "Definition Permitted (_agent : Agent) (action : Prop) : Prop := action \\/ ~action.\n\n"
         
         output += "(* Requirements *)\n"
-        for formula in self.deontic_formulas[:10]:
-            req_id = formula['requirement_id'].replace('-', '_')
-            
+        for formula in self.deontic_formulas:
+            req_id = self._normalize_identifier(formula['requirement_id']).upper()
             output += f"(* {formula['natural_language']} *)\n"
             output += f"Axiom {req_id} : "
-            
             if formula['operator'] == 'O':
-                output += "Obligatory True.\n"
+                output += "Obligatory \"" + formula['agent'] + "\" True.\n\n"
             elif formula['operator'] == 'F':
-                output += "Forbidden True.\n"
+                output += "Forbidden \"" + formula['agent'] + "\" True.\n\n"
             else:
-                output += "Permitted True.\n"
-            
-            output += "\n"
+                output += "Permitted \"" + formula['agent'] + "\" True.\n\n"
         
         output += "End ClarityAct.\n"
         return output
@@ -560,38 +692,35 @@ class ClarityActParser:
         output = "; CLARITY Act Requirements in SMT-LIB\n"
         output += "; Digital Asset Market Clarity Act of 2025\n\n"
         output += "(set-logic ALL)\n\n"
-        
-        output += "; Agent types\n"
-        output += "(declare-datatypes ((Agent 0)) (\n"
-        output += "  ((DigitalCommodityExchange)\n"
-        output += "   (DigitalCommodityBroker)\n"
-        output += "   (DigitalCommodityDealer)\n"
-        output += "   (Issuer)\n"
-        output += "   (SEC)\n"
-        output += "   (CFTC)\n"
-        output += "   (FederalReserveBank))))\n\n"
-        
+
+        output += "; Agent sort and constants\n"
+        output += "(declare-sort Agent 0)\n"
+        unique_agents = sorted({f['agent'] for f in self.deontic_formulas})
+        agent_symbols: Dict[str, str] = {}
+        for agent in unique_agents:
+            sym = "agent_" + self._normalize_identifier(agent)
+            if not sym:
+                sym = "agent_unspecified"
+            agent_symbols[agent] = sym
+            output += f"(declare-const {sym} Agent)\n"
+        output += "\n"
+
         output += "; Deontic operators\n"
         output += "(define-fun obligatory ((agent Agent) (action Bool)) Bool action)\n"
         output += "(define-fun forbidden ((agent Agent) (action Bool)) Bool (not action))\n"
         output += "(define-fun permitted ((agent Agent) (action Bool)) Bool true)\n\n"
-        
+
         output += "; Requirements\n"
-        for formula in self.deontic_formulas[:10]:
-            req_id = formula['requirement_id'].replace('-', '_')
-            agent_clean = formula['agent']
-            
+        for formula in self.deontic_formulas:
+            agent_sym = agent_symbols.get(formula['agent'], "agent_unspecified")
             output += f"; {formula['natural_language']}\n"
-            
             if formula['operator'] == 'O':
-                output += f"(assert (obligatory {agent_clean} true))\n"
+                output += f"(assert (obligatory {agent_sym} true))\n\n"
             elif formula['operator'] == 'F':
-                output += f"(assert (forbidden {agent_clean} true))\n"
+                output += f"(assert (forbidden {agent_sym} true))\n\n"
             else:
-                output += f"(assert (permitted {agent_clean} true))\n"
-            
-            output += "\n"
-        
+                output += f"(assert (permitted {agent_sym} true))\n\n"
+
         output += "(check-sat)\n"
         return output
     
@@ -692,16 +821,28 @@ def main():
     print("=" * 80)
     print()
     
-    # Setup paths
+    argp = argparse.ArgumentParser(description="Parse CLARITY Act text into deontic logic outputs")
+    argp.add_argument(
+        "input",
+        nargs="?",
+        default=None,
+        help="Path to input document (.txt/.xml/.pdf). Defaults to data/clarity_act_summary.txt",
+    )
+    argp.add_argument(
+        "--output-dir",
+        default=None,
+        help="Directory to write outputs (default: outputs/)",
+    )
+    args = argp.parse_args()
+
     project_root = Path(__file__).parent.parent
-    data_file = project_root / "data" / "clarity_act_summary.txt"
-    output_dir = project_root / "outputs"
-    
+    data_file = Path(args.input) if args.input else (project_root / "data" / "clarity_act_summary.txt")
+    output_dir = Path(args.output_dir) if args.output_dir else (project_root / "outputs")
+
     if not data_file.exists():
-        print(f"Error: Data file not found: {data_file}")
+        print(f"Error: Input file not found: {data_file}")
         return 1
-    
-    # Parse the document
+
     parser = ClarityActParser(data_file)
     requirements = parser.parse_document()
     
