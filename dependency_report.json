@@ -1,0 +1,50 @@
+{
+  "platform": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "arch": "amd64",
+    "arch_alt": "x86_64",
+    "python_version": "3.12.12",
+    "platform": "linux-amd64",
+    "distro": "ubuntu"
+  },
+  "checks": {
+    "python_version": {
+      "version": "3.12.12",
+      "compatible": true,
+      "recommended": true
+    },
+    "system_packages": {
+      "build-essential": true,
+      "git": true,
+      "curl": true,
+      "wget": true,
+      "hwloc": false,
+      "libhwloc-dev": false,
+      "mesa-opencl-icd": false,
+      "ocl-icd-opencl-dev": false,
+      "golang-go": false
+    },
+    "python_packages": {
+      "requests": true,
+      "httpx": true,
+      "aiohttp": true,
+      "aiofiles": true,
+      "watchdog": true,
+      "psutil": true,
+      "pyyaml": true,
+      "base58": true,
+      "multiaddr": true,
+      "python-magic": true,
+      "anyio": true,
+      "cryptography": true
+    },
+    "docker": true,
+    "docker_version": "28.2.2",
+    "docker_functional": true
+  },
+  "installations": {},
+  "errors": [
+    "Missing system packages: hwloc, libhwloc-dev, mesa-opencl-icd, ocl-icd-opencl-dev, golang-go"
+  ]
+}

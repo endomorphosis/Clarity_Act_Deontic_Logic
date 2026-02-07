@@ -17,6 +17,8 @@ git submodule update --init --recursive
 ### 2. Run the Parser
 
 ```bash
+bash tools/bootstrap_venv.sh
+source .venv/bin/activate
 python src/clarity_act_parser.py
 ```
 

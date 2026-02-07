@@ -50,6 +50,10 @@ cd Clarity_Act_Deontic_Logic
 # Initialize and update the submodule
 git submodule update --init --recursive
 
+# Create a virtualenv + install deps (also auto-configures Lotus PATH when present)
+bash tools/bootstrap_venv.sh
+source .venv/bin/activate
+
 # (Optional) Install additional dependencies for enhanced features
 pip install beartype  # For full logic_integration support
 ```
