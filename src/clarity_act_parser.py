@@ -26,21 +26,21 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "ipfs_datasets_py"))
 
 # Import deontic logic components
 try:
-    from ipfs_datasets_py.logic_integration.deontic_logic_converter import (
+    from ipfs_datasets_py.logic.integration.deontic_logic_converter import (
         DeonticLogicConverter,
         ConversionContext,
     )
-    from ipfs_datasets_py.logic_integration.legal_domain_knowledge import (
+    from ipfs_datasets_py.logic.integration.legal_domain_knowledge import (
         LegalDomainKnowledge,
         LegalDomain,
     )
-    from ipfs_datasets_py.logic_integration.logic_translation_core import (
+    from ipfs_datasets_py.logic.integration.logic_translation_core import (
         LeanTranslator,
         CoqTranslator,
         SMTTranslator,
         LogicTranslationTarget,
     )
-    from ipfs_datasets_py.logic_integration.deontic_logic_core import (
+    from ipfs_datasets_py.logic.integration.deontic_logic_core import (
         DeonticFormula,
         DeonticOperator,
     )
@@ -52,14 +52,16 @@ except ImportError as e:
 except SystemExit as e:
     print(f"Warning: ipfs_datasets_py import triggered SystemExit({e.code}); using mock implementations")
     LOGIC_AVAILABLE = False
-    
-    # Create mock classes
+
+
+if not LOGIC_AVAILABLE:
+    # Minimal mock implementations used by the unit tests and demo flows.
     class DeonticOperator:
         OBLIGATION = "O"
         PERMISSION = "P"
         PROHIBITION = "F"
         RIGHT = "R"
-    
+
     class DeonticFormula:
         def __init__(self, operator, agent, action, conditions=None, metadata=None):
             self.operator = operator

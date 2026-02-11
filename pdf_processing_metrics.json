@@ -1,0 +1,963 @@
+{
+  "metrics": {
+    "system_cpu_percent": [
+      {
+        "name": "system_cpu_percent",
+        "type": "gauge",
+        "value": 8.6,
+        "timestamp": 1770727202.4131324,
+        "labels": {},
+        "description": "CPU usage percentage"
+      }
+    ],
+    "system_cpu_0_percent": [
+      {
+        "name": "system_cpu_0_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136101,
+        "labels": {},
+        "description": "CPU 0 usage percentage"
+      }
+    ],
+    "system_cpu_1_percent": [
+      {
+        "name": "system_cpu_1_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.51363,
+        "labels": {},
+        "description": "CPU 1 usage percentage"
+      }
+    ],
+    "system_cpu_2_percent": [
+      {
+        "name": "system_cpu_2_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136337,
+        "labels": {},
+        "description": "CPU 2 usage percentage"
+      }
+    ],
+    "system_cpu_3_percent": [
+      {
+        "name": "system_cpu_3_percent",
+        "type": "gauge",
+        "value": 9.1,
+        "timestamp": 1770727202.5136366,
+        "labels": {},
+        "description": "CPU 3 usage percentage"
+      }
+    ],
+    "system_cpu_4_percent": [
+      {
+        "name": "system_cpu_4_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136395,
+        "labels": {},
+        "description": "CPU 4 usage percentage"
+      }
+    ],
+    "system_cpu_5_percent": [
+      {
+        "name": "system_cpu_5_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136418,
+        "labels": {},
+        "description": "CPU 5 usage percentage"
+      }
+    ],
+    "system_cpu_6_percent": [
+      {
+        "name": "system_cpu_6_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.513644,
+        "labels": {},
+        "description": "CPU 6 usage percentage"
+      }
+    ],
+    "system_cpu_7_percent": [
+      {
+        "name": "system_cpu_7_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136466,
+        "labels": {},
+        "description": "CPU 7 usage percentage"
+      }
+    ],
+    "system_cpu_8_percent": [
+      {
+        "name": "system_cpu_8_percent",
+        "type": "gauge",
+        "value": 100.0,
+        "timestamp": 1770727202.5136487,
+        "labels": {},
+        "description": "CPU 8 usage percentage"
+      }
+    ],
+    "system_cpu_9_percent": [
+      {
+        "name": "system_cpu_9_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.513651,
+        "labels": {},
+        "description": "CPU 9 usage percentage"
+      }
+    ],
+    "system_cpu_10_percent": [
+      {
+        "name": "system_cpu_10_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136533,
+        "labels": {},
+        "description": "CPU 10 usage percentage"
+      }
+    ],
+    "system_cpu_11_percent": [
+      {
+        "name": "system_cpu_11_percent",
+        "type": "gauge",
+        "value": 100.0,
+        "timestamp": 1770727202.5136557,
+        "labels": {},
+        "description": "CPU 11 usage percentage"
+      }
+    ],
+    "system_cpu_12_percent": [
+      {
+        "name": "system_cpu_12_percent",
+        "type": "gauge",
+        "value": 10.0,
+        "timestamp": 1770727202.5136578,
+        "labels": {},
+        "description": "CPU 12 usage percentage"
+      }
+    ],
+    "system_cpu_13_percent": [
+      {
+        "name": "system_cpu_13_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.51366,
+        "labels": {},
+        "description": "CPU 13 usage percentage"
+      }
+    ],
+    "system_cpu_14_percent": [
+      {
+        "name": "system_cpu_14_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136619,
+        "labels": {},
+        "description": "CPU 14 usage percentage"
+      }
+    ],
+    "system_cpu_15_percent": [
+      {
+        "name": "system_cpu_15_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.513664,
+        "labels": {},
+        "description": "CPU 15 usage percentage"
+      }
+    ],
+    "system_cpu_16_percent": [
+      {
+        "name": "system_cpu_16_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136657,
+        "labels": {},
+        "description": "CPU 16 usage percentage"
+      }
+    ],
+    "system_cpu_17_percent": [
+      {
+        "name": "system_cpu_17_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136676,
+        "labels": {},
+        "description": "CPU 17 usage percentage"
+      }
+    ],
+    "system_cpu_18_percent": [
+      {
+        "name": "system_cpu_18_percent",
+        "type": "gauge",
+        "value": 9.1,
+        "timestamp": 1770727202.5136695,
+        "labels": {},
+        "description": "CPU 18 usage percentage"
+      }
+    ],
+    "system_cpu_19_percent": [
+      {
+        "name": "system_cpu_19_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136714,
+        "labels": {},
+        "description": "CPU 19 usage percentage"
+      }
+    ],
+    "system_cpu_20_percent": [
+      {
+        "name": "system_cpu_20_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136733,
+        "labels": {},
+        "description": "CPU 20 usage percentage"
+      }
+    ],
+    "system_cpu_21_percent": [
+      {
+        "name": "system_cpu_21_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136752,
+        "labels": {},
+        "description": "CPU 21 usage percentage"
+      }
+    ],
+    "system_cpu_22_percent": [
+      {
+        "name": "system_cpu_22_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136771,
+        "labels": {},
+        "description": "CPU 22 usage percentage"
+      }
+    ],
+    "system_cpu_23_percent": [
+      {
+        "name": "system_cpu_23_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136788,
+        "labels": {},
+        "description": "CPU 23 usage percentage"
+      }
+    ],
+    "system_cpu_24_percent": [
+      {
+        "name": "system_cpu_24_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136805,
+        "labels": {},
+        "description": "CPU 24 usage percentage"
+      }
+    ],
+    "system_cpu_25_percent": [
+      {
+        "name": "system_cpu_25_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136821,
+        "labels": {},
+        "description": "CPU 25 usage percentage"
+      }
+    ],
+    "system_cpu_26_percent": [
+      {
+        "name": "system_cpu_26_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136843,
+        "labels": {},
+        "description": "CPU 26 usage percentage"
+      }
+    ],
+    "system_cpu_27_percent": [
+      {
+        "name": "system_cpu_27_percent",
+        "type": "gauge",
+        "value": 0.0,
+        "timestamp": 1770727202.5136862,
+        "labels": {},
+        "description": "CPU 27 usage percentage"
+      }
+    ],
+    "system_load_1min": [
+      {
+        "name": "system_load_1min",
+        "type": "gauge",
+        "value": 3.64306640625,
+        "timestamp": 1770727202.5136964,
+        "labels": {},
+        "description": "System load average (1 min)"
+      }
+    ],
+    "system_load_5min": [
+      {
+        "name": "system_load_5min",
+        "type": "gauge",
+        "value": 3.47705078125,
+        "timestamp": 1770727202.513699,
+        "labels": {},
+        "description": "System load average (5 min)"
+      }
+    ],
+    "system_load_15min": [
+      {
+        "name": "system_load_15min",
+        "type": "gauge",
+        "value": 3.32763671875,
+        "timestamp": 1770727202.513701,
+        "labels": {},
+        "description": "System load average (15 min)"
+      }
+    ],
+    "system_uptime_seconds": [
+      {
+        "name": "system_uptime_seconds",
+        "type": "gauge",
+        "value": 313458.5137681961,
+        "timestamp": 1770727202.5137694,
+        "labels": {},
+        "description": "System uptime in seconds"
+      }
+    ],
+    "process_memory_rss": [
+      {
+        "name": "process_memory_rss",
+        "type": "gauge",
+        "value": 3949400064,
+        "timestamp": 1770727202.5138905,
+        "labels": {},
+        "description": "Process RSS memory usage"
+      }
+    ],
+    "process_memory_vms": [
+      {
+        "name": "process_memory_vms",
+        "type": "gauge",
+        "value": 30240944128,
+        "timestamp": 1770727202.5138943,
+        "labels": {},
+        "description": "Process VMS memory usage"
+      }
+    ],
+    "system_memory_total": [
+      {
+        "name": "system_memory_total",
+        "type": "gauge",
+        "value": 134724648960,
+        "timestamp": 1770727202.5139577,
+        "labels": {},
+        "description": "Total system memory"
+      }
+    ],
+    "system_memory_available": [
+      {
+        "name": "system_memory_available",
+        "type": "gauge",
+        "value": 38513098752,
+        "timestamp": 1770727202.5139604,
+        "labels": {},
+        "description": "Available system memory"
+      }
+    ],
+    "system_memory_used": [
+      {
+        "name": "system_memory_used",
+        "type": "gauge",
+        "value": 96211550208,
+        "timestamp": 1770727202.5139625,
+        "labels": {},
+        "description": "Used system memory"
+      }
+    ],
+    "system_memory_percent": [
+      {
+        "name": "system_memory_percent",
+        "type": "gauge",
+        "value": 71.4,
+        "timestamp": 1770727202.5139642,
+        "labels": {},
+        "description": "System memory usage percentage"
+      }
+    ],
+    "network_bytes_sent": [
+      {
+        "name": "network_bytes_sent",
+        "type": "gauge",
+        "value": 103859962482,
+        "timestamp": 1770727202.5140994,
+        "labels": {},
+        "description": "Network bytes sent"
+      }
+    ],
+    "network_bytes_recv": [
+      {
+        "name": "network_bytes_recv",
+        "type": "gauge",
+        "value": 155334552888,
+        "timestamp": 1770727202.5141046,
+        "labels": {},
+        "description": "Network bytes received"
+      }
+    ],
+    "network_packets_sent": [
+      {
+        "name": "network_packets_sent",
+        "type": "gauge",
+        "value": 196646155,
+        "timestamp": 1770727202.514107,
+        "labels": {},
+        "description": "Network packets sent"
+      }
+    ],
+    "network_packets_recv": [
+      {
+        "name": "network_packets_recv",
+        "type": "gauge",
+        "value": 261655683,
+        "timestamp": 1770727202.514109,
+        "labels": {},
+        "description": "Network packets received"
+      }
+    ],
+    "disk_total": [
+      {
+        "name": "disk_total",
+        "type": "gauge",
+        "value": 2272017776640,
+        "timestamp": 1770727202.5141351,
+        "labels": {},
+        "description": "Total disk space"
+      }
+    ],
+    "disk_used": [
+      {
+        "name": "disk_used",
+        "type": "gauge",
+        "value": 109613416448,
+        "timestamp": 1770727202.5141377,
+        "labels": {},
+        "description": "Used disk space"
+      }
+    ],
+    "disk_free": [
+      {
+        "name": "disk_free",
+        "type": "gauge",
+        "value": 2162404360192,
+        "timestamp": 1770727202.51414,
+        "labels": {},
+        "description": "Free disk space"
+      }
+    ],
+    "disk_percent": [
+      {
+        "name": "disk_percent",
+        "type": "gauge",
+        "value": 4.8,
+        "timestamp": 1770727202.514142,
+        "labels": {},
+        "description": "Disk usage percentage"
+      }
+    ],
+    "process_cpu_percent": [
+      {
+        "name": "process_cpu_percent",
+        "type": "gauge",
+        "value": 99.9,
+        "timestamp": 1770727202.6144152,
+        "labels": {},
+        "description": "Process CPU usage percentage"
+      }
+    ],
+    "process_threads": [
+      {
+        "name": "process_threads",
+        "type": "gauge",
+        "value": 141,
+        "timestamp": 1770727202.6144717,
+        "labels": {},
+        "description": "Number of process threads"
+      }
+    ],
+    "process_open_files": [
+      {
+        "name": "process_open_files",
+        "type": "gauge",
+        "value": 2,
+        "timestamp": 1770727202.6152437,
+        "labels": {},
+        "description": "Number of open files"
+      }
+    ],
+    "process_connections": [
+      {
+        "name": "process_connections",
+        "type": "gauge",
+        "value": 1,
+        "timestamp": 1770727202.6221857,
+        "labels": {},
+        "description": "Number of network connections"
+      }
+    ],
+    "gc_count_gen0": [
+      {
+        "name": "gc_count_gen0",
+        "type": "gauge",
+        "value": 341,
+        "timestamp": 1770727202.6222138,
+        "labels": {},
+        "description": "GC collection count for generation 0"
+      }
+    ],
+    "gc_count_gen1": [
+      {
+        "name": "gc_count_gen1",
+        "type": "gauge",
+        "value": 10,
+        "timestamp": 1770727202.6222205,
+        "labels": {},
+        "description": "GC collection count for generation 1"
+      }
+    ],
+    "gc_count_gen2": [
+      {
+        "name": "gc_count_gen2",
+        "type": "gauge",
+        "value": 224,
+        "timestamp": 1770727202.6222246,
+        "labels": {},
+        "description": "GC collection count for generation 2"
+      }
+    ],
+    "gc_objects": [
+      {
+        "name": "gc_objects",
+        "type": "gauge",
+        "value": 14925263,
+        "timestamp": 1770727202.915275,
+        "labels": {},
+        "description": "Number of objects tracked by GC"
+      }
+    ],
+    "thread_count": [
+      {
+        "name": "thread_count",
+        "type": "gauge",
+        "value": 3,
+        "timestamp": 1770727202.915318,
+        "labels": {},
+        "description": "Number of active threads"
+      }
+    ],
+    "python_version": [
+      {
+        "name": "python_version",
+        "type": "gauge",
+        "value": 3.12,
+        "timestamp": 1770727202.915332,
+        "labels": {},
+        "description": "Python version"
+      }
+    ],
+    "operation_started": [
+      {
+        "name": "operation_started",
+        "type": "event",
+        "value": {
+          "operation_id": "pdf_processing_pipeline_1770726439_15",
+          "operation_type": "pdf_processing_pipeline",
+          "start_time": 1770726439.7994065
+        },
+        "timestamp": 1770726439.7994142,
+        "labels": {
+          "tags": [
+            "pdf",
+            "llm_optimization"
+          ]
+        },
+        "description": null
+      }
+    ],
+    "pdf_processing_pipeline_duration": [
+      {
+        "name": "pdf_processing_pipeline_duration",
+        "type": "timer",
+        "value": 149.5187282562256,
+        "timestamp": 1770726439.9489303,
+        "labels": {
+          "tags": [
+            "pdf",
+            "llm_optimization"
+          ]
+        },
+        "description": null
+      }
+    ],
+    "pdf_processing_pipeline_count": [
+      {
+        "name": "pdf_processing_pipeline_count",
+        "type": "counter",
+        "value": 13,
+        "timestamp": 1770726439.9489481,
+        "labels": {
+          "tags": [
+            "pdf",
+            "llm_optimization"
+          ],
+          "status": "success"
+        },
+        "description": null
+      },
+      {
+        "name": "pdf_processing_pipeline_count",
+        "type": "counter",
+        "value": 3,
+        "timestamp": 1770726435.5929766,
+        "labels": {
+          "tags": [
+            "pdf",
+            "llm_optimization"
+          ],
+          "status": "error"
+        },
+        "description": null
+      }
+    ],
+    "operation_completed": [
+      {
+        "name": "operation_completed",
+        "type": "event",
+        "value": {
+          "operation_id": "pdf_processing_pipeline_1770726439_15",
+          "operation_type": "pdf_processing_pipeline",
+          "start_time": 1770726439.7994065,
+          "end_time": 1770726439.9489253,
+          "duration_ms": 149.5187282562256,
+          "status": "success",
+          "success": true,
+          "error": null,
+          "labels": {
+            "tags": [
+              "pdf",
+              "llm_optimization"
+            ]
+          },
+          "sub_operations": [],
+          "metrics": {}
+        },
+        "timestamp": 1770726439.948954,
+        "labels": {
+          "tags": [
+            "pdf",
+            "llm_optimization"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation_id": "pdf_processing_pipeline_1770726114_0",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726114.750177,
+      "end_time": 1770726116.3626432,
+      "duration_ms": 1612.4663352966309,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726119_1",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726119.351121,
+      "end_time": 1770726122.3376348,
+      "duration_ms": 2986.51385307312,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726125_2",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726125.414987,
+      "end_time": 1770726127.157272,
+      "duration_ms": 1742.2850131988525,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726137_3",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726137.9648838,
+      "end_time": 1770726150.7341368,
+      "duration_ms": 12769.253015518188,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726192_4",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726192.0191066,
+      "end_time": 1770726195.380937,
+      "duration_ms": 3361.830472946167,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726214_5",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726214.1750362,
+      "end_time": 1770726215.441252,
+      "duration_ms": 1266.2158012390137,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726215_6",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726215.4414365,
+      "end_time": 1770726216.0645757,
+      "duration_ms": 623.1391429901123,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726216_7",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726216.0647683,
+      "end_time": 1770726216.7087383,
+      "duration_ms": 643.9700126647949,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726236_8",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726236.796975,
+      "end_time": 1770726237.5574226,
+      "duration_ms": 760.4477405548096,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726356_9",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726356.0422225,
+      "end_time": 1770726356.4310255,
+      "duration_ms": 388.80300521850586,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726359_10",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726359.660432,
+      "end_time": 1770726364.4683487,
+      "duration_ms": 4807.916641235352,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726367_11",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726367.6503708,
+      "end_time": 1770726404.7672737,
+      "duration_ms": 37116.90282821655,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726434_12",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726434.9757385,
+      "end_time": 1770726435.0370927,
+      "duration_ms": 61.35416030883789,
+      "status": "error",
+      "success": false,
+      "error": "sentence must not exceed 512 characters",
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726435_13",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726435.2764678,
+      "end_time": 1770726435.3196816,
+      "duration_ms": 43.213844299316406,
+      "status": "error",
+      "success": false,
+      "error": "sentence must not exceed 512 characters",
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726435_14",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726435.5525053,
+      "end_time": 1770726435.5929527,
+      "duration_ms": 40.44747352600098,
+      "status": "error",
+      "success": false,
+      "error": "sentence must not exceed 512 characters",
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770726439_15",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770726439.7994065,
+      "end_time": 1770726439.9489253,
+      "duration_ms": 149.5187282562256,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    }
+  ],
+  "timestamp": 1770727212.1469219,
+  "hostname": "barberb-HP-ZBook-Fury-16-G11-Mobile-Workstation-PC",
+  "uptime": 1100.8037774562836
+}

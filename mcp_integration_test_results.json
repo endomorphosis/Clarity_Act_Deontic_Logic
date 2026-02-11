@@ -1,0 +1,586 @@
+{
+  "timestamp": 1770726302.535816,
+  "success": true,
+  "errors": [],
+  "basic_endpoints": {
+    "/": {
+      "name": "Main Dashboard",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.11225,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "/api/mcp/status": {
+      "name": "MCP Status API",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.003353,
+      "content_type": "application/json",
+      "json_valid": true,
+      "data_keys": [
+        "active_executions",
+        "analytics",
+        "config",
+        "external_url",
+        "graphrag",
+        "investigation",
+        "rag_query",
+        "server_type",
+        "status",
+        "tools_available",
+        "total_executions",
+        "uptime"
+      ]
+    },
+    "/api/mcp/tools": {
+      "name": "MCP Tools API",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.00305,
+      "content_type": "application/json",
+      "json_valid": true,
+      "data_keys": [
+        "admin_tools",
+        "alert_tools",
+        "analysis_tools",
+        "audit_tools",
+        "auth_tools",
+        "background_task_tools",
+        "bespoke_tools",
+        "cache_tools",
+        "cli",
+        "dashboard_tools",
+        "data_processing_tools",
+        "dataset_tools",
+        "development_tools",
+        "discord_tools",
+        "email_tools",
+        "embedding_tools",
+        "file_converter_tools",
+        "file_detection_tools",
+        "finance_data_tools",
+        "functions",
+        "graph_tools",
+        "index_management_tools",
+        "investigation_tools",
+        "ipfs_cluster_tools",
+        "ipfs_tools",
+        "legacy_mcp_tools",
+        "legal_dataset_tools",
+        "media_tools",
+        "medical_research_scrapers",
+        "monitoring_tools",
+        "p2p_workflow_tools",
+        "pdf_tools",
+        "provenance_tools",
+        "rate_limiting_tools",
+        "security_tools",
+        "session_tools",
+        "software_engineering_tools",
+        "sparse_embedding_tools",
+        "storage_tools",
+        "vector_store_tools",
+        "vector_tools",
+        "web_archive_tools",
+        "web_scraping_tools",
+        "workflow_tools"
+      ]
+    },
+    "/api/health": {
+      "name": "Health Check",
+      "status_code": 404,
+      "success": false,
+      "response_time": 0.001078,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "/mcp": {
+      "name": "MCP Interface",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.024579,
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "mcp_tools_loading": {
+    "success": true,
+    "api_tools_count": 200,
+    "direct_tools_count": 313,
+    "tools_by_category": {
+      "legacy_mcp_tools": [
+        "admin_tools",
+        "analysis_tools",
+        "background_task_tools",
+        "cache_tools",
+        "data_processing_tools",
+        "github_cli_tools",
+        "gemini_cli_tools",
+        "claude_cli_tools",
+        "vscode_cli_tools",
+        "embedding_tools",
+        "index_management_tools",
+        "vector_store_tools",
+        "temporal_deontic_logic_tools",
+        "authentication_tools",
+        "ipfs_cluster_tools",
+        "search_tools",
+        "create_embeddings_tool",
+        "copilot_cli_tools",
+        "session_management_tools",
+        "geospatial_tools",
+        "tool_wrapper",
+        "automated_pr_review_tools",
+        "shard_embeddings_tool",
+        "patent_dataset_mcp_tools",
+        "patent_scraper",
+        "legal_dataset_mcp_tools",
+        "municipal_scraper_fallbacks"
+      ],
+      "admin_tools": [
+        "enhanced_admin_tools"
+      ],
+      "alert_tools": [
+        "discord_alert_tools"
+      ],
+      "audit_tools": [
+        "generate_audit_report",
+        "audit_tools",
+        "record_audit_event"
+      ],
+      "auth_tools": [
+        "enhanced_auth_tools",
+        "auth_tools"
+      ],
+      "background_task_tools": [
+        "enhanced_background_task_tools"
+      ],
+      "bespoke_tools": [
+        "cache_stats",
+        "execute_workflow",
+        "create_vector_store",
+        "system_health",
+        "system_status",
+        "delete_index",
+        "list_indices"
+      ],
+      "cache_tools": [
+        "enhanced_cache_tools"
+      ],
+      "cli": [
+        "medical_research_cli",
+        "execute_command"
+      ],
+      "dashboard_tools": [
+        "js_error_reporter"
+      ],
+      "dataset_tools": [
+        "process_dataset",
+        "dataset_tools_claudes",
+        "convert_dataset_format",
+        "text_to_fol",
+        "legal_text_to_deontic",
+        "load_dataset",
+        "save_dataset"
+      ],
+      "development_tools": [
+        "codebase_search",
+        "config",
+        "base_tool",
+        "documentation_generator_simple",
+        "test_runner",
+        "github_cli_server_tools",
+        "documentation_generator",
+        "test_generator",
+        "gemini_cli_server_tools",
+        "claude_cli_server_tools",
+        "linting_tools"
+      ],
+      "discord_tools": [
+        "discord_analyze",
+        "discord_export",
+        "discord_list",
+        "discord_convert"
+      ],
+      "email_tools": [
+        "email_connect",
+        "email_analyze",
+        "email_export"
+      ],
+      "embedding_tools": [
+        "tool_registration",
+        "embedding_generation",
+        "enhanced_embedding_tools",
+        "cluster_management",
+        "shard_embeddings",
+        "advanced_search",
+        "advanced_embedding_generation"
+      ],
+      "file_converter_tools": [
+        "generate_embeddings",
+        "download_url",
+        "extract_knowledge_graph",
+        "batch_convert",
+        "extract_archive",
+        "generate_summary",
+        "file_info",
+        "convert_file"
+      ],
+      "file_detection_tools": [
+        "detect_file_type",
+        "analyze_detection_accuracy",
+        "batch_detect_file_types"
+      ],
+      "finance_data_tools": [
+        "news_scrapers",
+        "finance_theorems",
+        "stock_scrapers",
+        "embedding_correlation",
+        "graphrag_news_analyzer"
+      ],
+      "functions": [
+        "execute_python_snippet"
+      ],
+      "graph_tools": [
+        "query_knowledge_graph"
+      ],
+      "investigation_tools": [
+        "relationship_timeline_tools",
+        "deontological_reasoning_tools",
+        "data_ingestion_tools",
+        "geospatial_analysis_tools",
+        "entity_analysis_tools"
+      ],
+      "ipfs_cluster_tools": [
+        "enhanced_ipfs_cluster_tools"
+      ],
+      "ipfs_tools": [
+        "ipfs_tools_claudes",
+        "pin_to_ipfs",
+        "get_from_ipfs"
+      ],
+      "monitoring_tools": [
+        "monitoring_tools",
+        "enhanced_monitoring_tools"
+      ],
+      "workflow_tools": [
+        "workflow_tools",
+        "enhanced_workflow_tools"
+      ],
+      "storage_tools": [
+        "storage_tools"
+      ],
+      "rate_limiting_tools": [
+        "rate_limiting_tools"
+      ],
+      "sparse_embedding_tools": [
+        "sparse_embedding_tools"
+      ],
+      "legal_dataset_tools": [
+        "state_manager",
+        "test_all_states_with_parquet",
+        "test_state_laws_integration",
+        "state_laws_scheduler",
+        "test_sample_states",
+        "analyze_failed_state",
+        "federal_register_scraper",
+        "verify_federal_register_scraper",
+        "state_laws_scraper",
+        "verify_all_scrapers",
+        "recap_archive_scraper",
+        "test_all_scrapers",
+        "incremental_updates",
+        "state_laws_cron",
+        "test_dashboard_integration",
+        "setup_periodic_updates",
+        "municipal_laws_scraper",
+        "verify_us_code_scraper",
+        "quick_test_fixes",
+        "us_code_scraper",
+        "validate_all_state_scrapers",
+        "citation_extraction",
+        "export_utils",
+        "ipfs_storage_integration"
+      ],
+      "media_tools": [
+        "ffmpeg_convert",
+        "ffmpeg_info",
+        "ffmpeg_edit",
+        "ytdlp_download",
+        "ffmpeg_filters",
+        "ffmpeg_utils",
+        "ffmpeg_batch",
+        "ffmpeg_stream",
+        "ffmpeg_mux_demux"
+      ],
+      "medical_research_scrapers": [
+        "pubmed_scraper",
+        "ai_dataset_builder",
+        "medical_research_mcp_tools",
+        "clinical_trials_scraper",
+        "biomolecule_discovery"
+      ],
+      "p2p_workflow_tools": [
+        "p2p_workflow_tools"
+      ],
+      "pdf_tools": [
+        "pdf_ingest_to_graphrag",
+        "pdf_query_knowledge_graph",
+        "pdf_optimize_for_llm",
+        "pdf_extract_entities",
+        "pdf_query_corpus",
+        "pdf_cross_document_analysis",
+        "pdf_batch_process",
+        "pdf_analyze_relationships"
+      ],
+      "provenance_tools": [
+        "provenance_tools_claudes",
+        "record_provenance"
+      ],
+      "security_tools": [
+        "check_access_permission"
+      ],
+      "session_tools": [
+        "enhanced_session_tools",
+        "session_tools"
+      ],
+      "software_engineering_tools": [
+        "software_theorems",
+        "github_actions_analyzer",
+        "ai_agent_pr_creator",
+        "github_repository_scraper",
+        "dag_workflow_planner",
+        "dependency_chain_analyzer",
+        "auto_healing_coordinator",
+        "kubernetes_log_analyzer",
+        "gpu_provisioning_predictor",
+        "systemd_log_parser",
+        "error_pattern_detector"
+      ],
+      "vector_store_tools": [
+        "enhanced_vector_store_tools"
+      ],
+      "vector_tools": [
+        "create_vector_index",
+        "vector_store_management",
+        "search_vector_index",
+        "shared_state",
+        "vector_stores"
+      ],
+      "web_archive_tools": [
+        "extract_dataset_from_cdxj",
+        "google_search",
+        "create_warc",
+        "wayback_machine_search",
+        "common_crawl_advanced",
+        "index_warc",
+        "extract_metadata_from_warc",
+        "archive_is_integration",
+        "huggingface_search",
+        "ipwb_integration",
+        "common_crawl_search",
+        "extract_text_from_warc",
+        "extract_links_from_warc",
+        "autoscraper_integration",
+        "github_search",
+        "brave_search",
+        "serpstack_search",
+        "openverse_search"
+      ],
+      "web_scraping_tools": [
+        "unified_scraper_tool"
+      ]
+    },
+    "sample_tools": {
+      "admin_tools": {
+        "description": "Tool: admin_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/legacy_mcp_tools/admin_tools.py",
+        "name": "admin_tools",
+        "category": "legacy_mcp_tools"
+      },
+      "enhanced_admin_tools": {
+        "description": "Tool: enhanced_admin_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/admin_tools/enhanced_admin_tools.py",
+        "name": "enhanced_admin_tools",
+        "category": "admin_tools"
+      },
+      "discord_alert_tools": {
+        "description": "Tool: discord_alert_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/alert_tools/discord_alert_tools.py",
+        "name": "discord_alert_tools",
+        "category": "alert_tools"
+      },
+      "analysis_tools": {
+        "description": "Tool: analysis_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/legacy_mcp_tools/analysis_tools.py",
+        "name": "analysis_tools",
+        "category": "legacy_mcp_tools"
+      },
+      "generate_audit_report": {
+        "description": "Tool: generate_audit_report",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/audit_tools/generate_audit_report.py",
+        "name": "generate_audit_report",
+        "category": "audit_tools"
+      },
+      "audit_tools": {
+        "description": "Tool: audit_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/audit_tools/audit_tools.py",
+        "name": "audit_tools",
+        "category": "audit_tools"
+      },
+      "record_audit_event": {
+        "description": "Tool: record_audit_event",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/audit_tools/record_audit_event.py",
+        "name": "record_audit_event",
+        "category": "audit_tools"
+      },
+      "enhanced_auth_tools": {
+        "description": "Tool: enhanced_auth_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/auth_tools/enhanced_auth_tools.py",
+        "name": "enhanced_auth_tools",
+        "category": "auth_tools"
+      },
+      "auth_tools": {
+        "description": "Tool: auth_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/auth_tools/auth_tools.py",
+        "name": "auth_tools",
+        "category": "auth_tools"
+      },
+      "enhanced_background_task_tools": {
+        "description": "Tool: enhanced_background_task_tools",
+        "file": "/home/barberb/Clarity_Act_Deontic_Logic/ipfs_datasets_py/ipfs_datasets_py/mcp_server/tools/background_task_tools/enhanced_background_task_tools.py",
+        "name": "enhanced_background_task_tools",
+        "category": "background_task_tools"
+      }
+    },
+    "categories": [
+      "legacy_mcp_tools",
+      "admin_tools",
+      "alert_tools",
+      "audit_tools",
+      "auth_tools",
+      "background_task_tools",
+      "bespoke_tools",
+      "cache_tools",
+      "cli",
+      "dashboard_tools",
+      "dataset_tools",
+      "development_tools",
+      "discord_tools",
+      "email_tools",
+      "embedding_tools",
+      "file_converter_tools",
+      "file_detection_tools",
+      "finance_data_tools",
+      "functions",
+      "graph_tools",
+      "investigation_tools",
+      "ipfs_cluster_tools",
+      "ipfs_tools",
+      "monitoring_tools",
+      "workflow_tools",
+      "storage_tools",
+      "rate_limiting_tools",
+      "sparse_embedding_tools",
+      "legal_dataset_tools",
+      "media_tools",
+      "medical_research_scrapers",
+      "p2p_workflow_tools",
+      "pdf_tools",
+      "provenance_tools",
+      "security_tools",
+      "session_tools",
+      "software_engineering_tools",
+      "vector_store_tools",
+      "vector_tools",
+      "web_archive_tools",
+      "web_scraping_tools"
+    ]
+  },
+  "dataset_tools": {
+    "list_datasets": {
+      "success": false,
+      "error": "Tool list_datasets not found"
+    },
+    "get_dataset_info": {
+      "success": false,
+      "error": "Tool get_dataset_info not found"
+    },
+    "create_dataset": {
+      "success": false,
+      "error": "Tool create_dataset not found"
+    }
+  },
+  "ipfs_tools": {
+    "ipfs_node_info": {
+      "success": false,
+      "error": "Tool ipfs_node_info not found"
+    },
+    "ipfs_pin_list": {
+      "success": false,
+      "error": "Tool ipfs_pin_list not found"
+    },
+    "get_from_ipfs": {
+      "success": true,
+      "execution_time": 4.482269287109375e-05,
+      "result_type": "dict",
+      "result_keys": [
+        "status",
+        "cid",
+        "content_type",
+        "content",
+        "binary_size"
+      ],
+      "result_size": 141
+    }
+  },
+  "vector_tools": {
+    "create_vector_index": {
+      "success": false,
+      "error": "Tool create_vector_index not found"
+    },
+    "vector_similarity_search": {
+      "success": false,
+      "error": "Tool vector_similarity_search not found"
+    }
+  },
+  "audit_tools": {
+    "generate_audit_report": {
+      "success": true,
+      "execution_time": 9.584426879882812e-05,
+      "result_type": "dict",
+      "result_keys": [
+        "status",
+        "message",
+        "report_type"
+      ],
+      "result_size": 92
+    },
+    "get_system_logs": {
+      "success": false,
+      "error": "Tool get_system_logs not found"
+    }
+  },
+  "performance": {
+    "/api/mcp/status": {
+      "avg_response_time": 0.0035302162170410155,
+      "min_response_time": 0.0026149749755859375,
+      "max_response_time": 0.004065752029418945,
+      "successful_requests": 10,
+      "failed_requests": 0,
+      "success_rate": 1.0
+    },
+    "/api/mcp/tools": {
+      "avg_response_time": 0.003495192527770996,
+      "min_response_time": 0.002519845962524414,
+      "max_response_time": 0.004252433776855469,
+      "successful_requests": 10,
+      "failed_requests": 0,
+      "success_rate": 1.0
+    },
+    "/api/health": {
+      "successful_requests": 0,
+      "failed_requests": 10,
+      "success_rate": 0
+    }
+  },
+  "failed_categories": []
+}
