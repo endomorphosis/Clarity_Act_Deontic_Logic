@@ -4,8 +4,8 @@
       {
         "name": "system_cpu_percent",
         "type": "gauge",
-        "value": 8.6,
-        "timestamp": 1770727202.4131324,
+        "value": 5.0,
+        "timestamp": 1770749740.7872775,
         "labels": {},
         "description": "CPU usage percentage"
       }
@@ -15,7 +15,7 @@
         "name": "system_cpu_0_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136101,
+        "timestamp": 1770749740.8880715,
         "labels": {},
         "description": "CPU 0 usage percentage"
       }
@@ -25,7 +25,7 @@
         "name": "system_cpu_1_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.51363,
+        "timestamp": 1770749740.8880928,
         "labels": {},
         "description": "CPU 1 usage percentage"
       }
@@ -35,7 +35,7 @@
         "name": "system_cpu_2_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136337,
+        "timestamp": 1770749740.8880975,
         "labels": {},
         "description": "CPU 2 usage percentage"
       }
@@ -44,8 +44,8 @@
       {
         "name": "system_cpu_3_percent",
         "type": "gauge",
-        "value": 9.1,
-        "timestamp": 1770727202.5136366,
+        "value": 0.0,
+        "timestamp": 1770749740.888101,
         "labels": {},
         "description": "CPU 3 usage percentage"
       }
@@ -55,7 +55,7 @@
         "name": "system_cpu_4_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136395,
+        "timestamp": 1770749740.8881042,
         "labels": {},
         "description": "CPU 4 usage percentage"
       }
@@ -64,8 +64,8 @@
       {
         "name": "system_cpu_5_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.5136418,
+        "value": 9.1,
+        "timestamp": 1770749740.888107,
         "labels": {},
         "description": "CPU 5 usage percentage"
       }
@@ -74,8 +74,8 @@
       {
         "name": "system_cpu_6_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.513644,
+        "value": 22.2,
+        "timestamp": 1770749740.88811,
         "labels": {},
         "description": "CPU 6 usage percentage"
       }
@@ -85,7 +85,7 @@
         "name": "system_cpu_7_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136466,
+        "timestamp": 1770749740.8881123,
         "labels": {},
         "description": "CPU 7 usage percentage"
       }
@@ -94,8 +94,8 @@
       {
         "name": "system_cpu_8_percent",
         "type": "gauge",
-        "value": 100.0,
-        "timestamp": 1770727202.5136487,
+        "value": 30.0,
+        "timestamp": 1770749740.8881152,
         "labels": {},
         "description": "CPU 8 usage percentage"
       }
@@ -105,7 +105,7 @@
         "name": "system_cpu_9_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.513651,
+        "timestamp": 1770749740.8881183,
         "labels": {},
         "description": "CPU 9 usage percentage"
       }
@@ -115,7 +115,7 @@
         "name": "system_cpu_10_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136533,
+        "timestamp": 1770749740.8881211,
         "labels": {},
         "description": "CPU 10 usage percentage"
       }
@@ -125,7 +125,7 @@
         "name": "system_cpu_11_percent",
         "type": "gauge",
         "value": 100.0,
-        "timestamp": 1770727202.5136557,
+        "timestamp": 1770749740.8881233,
         "labels": {},
         "description": "CPU 11 usage percentage"
       }
@@ -134,8 +134,8 @@
       {
         "name": "system_cpu_12_percent",
         "type": "gauge",
-        "value": 10.0,
-        "timestamp": 1770727202.5136578,
+        "value": 9.1,
+        "timestamp": 1770749740.8881261,
         "labels": {},
         "description": "CPU 12 usage percentage"
       }
@@ -145,7 +145,7 @@
         "name": "system_cpu_13_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.51366,
+        "timestamp": 1770749740.8881288,
         "labels": {},
         "description": "CPU 13 usage percentage"
       }
@@ -154,8 +154,8 @@
       {
         "name": "system_cpu_14_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.5136619,
+        "value": 18.2,
+        "timestamp": 1770749740.8881316,
         "labels": {},
         "description": "CPU 14 usage percentage"
       }
@@ -165,7 +165,7 @@
         "name": "system_cpu_15_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.513664,
+        "timestamp": 1770749740.888135,
         "labels": {},
         "description": "CPU 15 usage percentage"
       }
@@ -174,8 +174,8 @@
       {
         "name": "system_cpu_16_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.5136657,
+        "value": 9.1,
+        "timestamp": 1770749740.8881378,
         "labels": {},
         "description": "CPU 16 usage percentage"
       }
@@ -185,7 +185,7 @@
         "name": "system_cpu_17_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136676,
+        "timestamp": 1770749740.88814,
         "labels": {},
         "description": "CPU 17 usage percentage"
       }
@@ -194,8 +194,8 @@
       {
         "name": "system_cpu_18_percent",
         "type": "gauge",
-        "value": 9.1,
-        "timestamp": 1770727202.5136695,
+        "value": 0.0,
+        "timestamp": 1770749740.8881428,
         "labels": {},
         "description": "CPU 18 usage percentage"
       }
@@ -205,7 +205,7 @@
         "name": "system_cpu_19_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136714,
+        "timestamp": 1770749740.8881454,
         "labels": {},
         "description": "CPU 19 usage percentage"
       }
@@ -215,7 +215,7 @@
         "name": "system_cpu_20_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136733,
+        "timestamp": 1770749740.8881478,
         "labels": {},
         "description": "CPU 20 usage percentage"
       }
@@ -225,7 +225,7 @@
         "name": "system_cpu_21_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136752,
+        "timestamp": 1770749740.88815,
         "labels": {},
         "description": "CPU 21 usage percentage"
       }
@@ -235,7 +235,7 @@
         "name": "system_cpu_22_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136771,
+        "timestamp": 1770749740.888153,
         "labels": {},
         "description": "CPU 22 usage percentage"
       }
@@ -245,7 +245,7 @@
         "name": "system_cpu_23_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136788,
+        "timestamp": 1770749740.888156,
         "labels": {},
         "description": "CPU 23 usage percentage"
       }
@@ -254,8 +254,8 @@
       {
         "name": "system_cpu_24_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.5136805,
+        "value": 10.0,
+        "timestamp": 1770749740.888159,
         "labels": {},
         "description": "CPU 24 usage percentage"
       }
@@ -265,7 +265,7 @@
         "name": "system_cpu_25_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136821,
+        "timestamp": 1770749740.888162,
         "labels": {},
         "description": "CPU 25 usage percentage"
       }
@@ -275,7 +275,7 @@
         "name": "system_cpu_26_percent",
         "type": "gauge",
         "value": 0.0,
-        "timestamp": 1770727202.5136843,
+        "timestamp": 1770749740.888164,
         "labels": {},
         "description": "CPU 26 usage percentage"
       }
@@ -284,8 +284,8 @@
       {
         "name": "system_cpu_27_percent",
         "type": "gauge",
-        "value": 0.0,
-        "timestamp": 1770727202.5136862,
+        "value": 9.1,
+        "timestamp": 1770749740.888167,
         "labels": {},
         "description": "CPU 27 usage percentage"
       }
@@ -294,8 +294,8 @@
       {
         "name": "system_load_1min",
         "type": "gauge",
-        "value": 3.64306640625,
-        "timestamp": 1770727202.5136964,
+        "value": 1.85791015625,
+        "timestamp": 1770749740.8881779,
         "labels": {},
         "description": "System load average (1 min)"
       }
@@ -304,8 +304,8 @@
       {
         "name": "system_load_5min",
         "type": "gauge",
-        "value": 3.47705078125,
-        "timestamp": 1770727202.513699,
+        "value": 2.3896484375,
+        "timestamp": 1770749740.888181,
         "labels": {},
         "description": "System load average (5 min)"
       }
@@ -314,8 +314,8 @@
       {
         "name": "system_load_15min",
         "type": "gauge",
-        "value": 3.32763671875,
-        "timestamp": 1770727202.513701,
+        "value": 2.8818359375,
+        "timestamp": 1770749740.8881836,
         "labels": {},
         "description": "System load average (15 min)"
       }
@@ -324,8 +324,8 @@
       {
         "name": "system_uptime_seconds",
         "type": "gauge",
-        "value": 313458.5137681961,
-        "timestamp": 1770727202.5137694,
+        "value": 335996.88826560974,
+        "timestamp": 1770749740.8882673,
         "labels": {},
         "description": "System uptime in seconds"
       }
@@ -334,8 +334,8 @@
       {
         "name": "process_memory_rss",
         "type": "gauge",
-        "value": 3949400064,
-        "timestamp": 1770727202.5138905,
+        "value": 1969332224,
+        "timestamp": 1770749740.8883626,
         "labels": {},
         "description": "Process RSS memory usage"
       }
@@ -344,8 +344,8 @@
       {
         "name": "process_memory_vms",
         "type": "gauge",
-        "value": 30240944128,
-        "timestamp": 1770727202.5138943,
+        "value": 31490265088,
+        "timestamp": 1770749740.8883672,
         "labels": {},
         "description": "Process VMS memory usage"
       }
@@ -355,7 +355,7 @@
         "name": "system_memory_total",
         "type": "gauge",
         "value": 134724648960,
-        "timestamp": 1770727202.5139577,
+        "timestamp": 1770749740.8884122,
         "labels": {},
         "description": "Total system memory"
       }
@@ -364,8 +364,8 @@
       {
         "name": "system_memory_available",
         "type": "gauge",
-        "value": 38513098752,
-        "timestamp": 1770727202.5139604,
+        "value": 38096900096,
+        "timestamp": 1770749740.8884149,
         "labels": {},
         "description": "Available system memory"
       }
@@ -374,8 +374,8 @@
       {
         "name": "system_memory_used",
         "type": "gauge",
-        "value": 96211550208,
-        "timestamp": 1770727202.5139625,
+        "value": 96627748864,
+        "timestamp": 1770749740.888418,
         "labels": {},
         "description": "Used system memory"
       }
@@ -384,8 +384,8 @@
       {
         "name": "system_memory_percent",
         "type": "gauge",
-        "value": 71.4,
-        "timestamp": 1770727202.5139642,
+        "value": 71.7,
+        "timestamp": 1770749740.8884206,
         "labels": {},
         "description": "System memory usage percentage"
       }
@@ -394,8 +394,8 @@
       {
         "name": "network_bytes_sent",
         "type": "gauge",
-        "value": 103859962482,
-        "timestamp": 1770727202.5140994,
+        "value": 108649959524,
+        "timestamp": 1770749740.8885522,
         "labels": {},
         "description": "Network bytes sent"
       }
@@ -404,8 +404,8 @@
       {
         "name": "network_bytes_recv",
         "type": "gauge",
-        "value": 155334552888,
-        "timestamp": 1770727202.5141046,
+        "value": 159642196627,
+        "timestamp": 1770749740.888557,
         "labels": {},
         "description": "Network bytes received"
       }
@@ -414,8 +414,8 @@
       {
         "name": "network_packets_sent",
         "type": "gauge",
-        "value": 196646155,
-        "timestamp": 1770727202.514107,
+        "value": 207153225,
+        "timestamp": 1770749740.8885603,
         "labels": {},
         "description": "Network packets sent"
       }
@@ -424,8 +424,8 @@
       {
         "name": "network_packets_recv",
         "type": "gauge",
-        "value": 261655683,
-        "timestamp": 1770727202.514109,
+        "value": 275414826,
+        "timestamp": 1770749740.8885627,
         "labels": {},
         "description": "Network packets received"
       }
@@ -434,8 +434,8 @@
       {
         "name": "disk_total",
         "type": "gauge",
-        "value": 2272017776640,
-        "timestamp": 1770727202.5141351,
+        "value": 2271135399936,
+        "timestamp": 1770749740.88858,
         "labels": {},
         "description": "Total disk space"
       }
@@ -444,8 +444,8 @@
       {
         "name": "disk_used",
         "type": "gauge",
-        "value": 109613416448,
-        "timestamp": 1770727202.5141377,
+        "value": 109696516096,
+        "timestamp": 1770749740.8885832,
         "labels": {},
         "description": "Used disk space"
       }
@@ -454,8 +454,8 @@
       {
         "name": "disk_free",
         "type": "gauge",
-        "value": 2162404360192,
-        "timestamp": 1770727202.51414,
+        "value": 2161438883840,
+        "timestamp": 1770749740.8885856,
         "labels": {},
         "description": "Free disk space"
       }
@@ -465,7 +465,7 @@
         "name": "disk_percent",
         "type": "gauge",
         "value": 4.8,
-        "timestamp": 1770727202.514142,
+        "timestamp": 1770749740.8885877,
         "labels": {},
         "description": "Disk usage percentage"
       }
@@ -474,8 +474,8 @@
       {
         "name": "process_cpu_percent",
         "type": "gauge",
-        "value": 99.9,
-        "timestamp": 1770727202.6144152,
+        "value": 10.0,
+        "timestamp": 1770749740.988907,
         "labels": {},
         "description": "Process CPU usage percentage"
       }
@@ -484,8 +484,8 @@
       {
         "name": "process_threads",
         "type": "gauge",
-        "value": 141,
-        "timestamp": 1770727202.6144717,
+        "value": 185,
+        "timestamp": 1770749740.9889488,
         "labels": {},
         "description": "Number of process threads"
       }
@@ -494,8 +494,8 @@
       {
         "name": "process_open_files",
         "type": "gauge",
-        "value": 2,
-        "timestamp": 1770727202.6152437,
+        "value": 3,
+        "timestamp": 1770749740.9892452,
         "labels": {},
         "description": "Number of open files"
       }
@@ -505,7 +505,7 @@
         "name": "process_connections",
         "type": "gauge",
         "value": 1,
-        "timestamp": 1770727202.6221857,
+        "timestamp": 1770749740.9944222,
         "labels": {},
         "description": "Number of network connections"
       }
@@ -514,8 +514,8 @@
       {
         "name": "gc_count_gen0",
         "type": "gauge",
-        "value": 341,
-        "timestamp": 1770727202.6222138,
+        "value": 188,
+        "timestamp": 1770749740.9944496,
         "labels": {},
         "description": "GC collection count for generation 0"
       }
@@ -525,7 +525,7 @@
         "name": "gc_count_gen1",
         "type": "gauge",
         "value": 10,
-        "timestamp": 1770727202.6222205,
+        "timestamp": 1770749740.994456,
         "labels": {},
         "description": "GC collection count for generation 1"
       }
@@ -534,8 +534,8 @@
       {
         "name": "gc_count_gen2",
         "type": "gauge",
-        "value": 224,
-        "timestamp": 1770727202.6222246,
+        "value": 79,
+        "timestamp": 1770749740.9944596,
         "labels": {},
         "description": "GC collection count for generation 2"
       }
@@ -544,8 +544,8 @@
       {
         "name": "gc_objects",
         "type": "gauge",
-        "value": 14925263,
-        "timestamp": 1770727202.915275,
+        "value": 1091315,
+        "timestamp": 1770749741.0386944,
         "labels": {},
         "description": "Number of objects tracked by GC"
       }
@@ -554,8 +554,8 @@
       {
         "name": "thread_count",
         "type": "gauge",
-        "value": 3,
-        "timestamp": 1770727202.915318,
+        "value": 27,
+        "timestamp": 1770749741.038722,
         "labels": {},
         "description": "Number of active threads"
       }
@@ -565,7 +565,7 @@
         "name": "python_version",
         "type": "gauge",
         "value": 3.12,
-        "timestamp": 1770727202.915332,
+        "timestamp": 1770749741.0387309,
         "labels": {},
         "description": "Python version"
       }
@@ -575,11 +575,11 @@
         "name": "operation_started",
         "type": "event",
         "value": {
-          "operation_id": "pdf_processing_pipeline_1770726439_15",
+          "operation_id": "pdf_processing_pipeline_1770749379_121",
           "operation_type": "pdf_processing_pipeline",
-          "start_time": 1770726439.7994065
+          "start_time": 1770749379.0660298
         },
-        "timestamp": 1770726439.7994142,
+        "timestamp": 1770749379.0660367,
         "labels": {
           "tags": [
             "pdf",
@@ -593,8 +593,8 @@
       {
         "name": "pdf_processing_pipeline_duration",
         "type": "timer",
-        "value": 149.5187282562256,
-        "timestamp": 1770726439.9489303,
+        "value": 1582.146406173706,
+        "timestamp": 1770749380.648185,
         "labels": {
           "tags": [
             "pdf",
@@ -608,28 +608,14 @@
       {
         "name": "pdf_processing_pipeline_count",
         "type": "counter",
-        "value": 13,
-        "timestamp": 1770726439.9489481,
+        "value": 122,
+        "timestamp": 1770749380.6482184,
         "labels": {
           "tags": [
             "pdf",
             "llm_optimization"
           ],
           "status": "success"
-        },
-        "description": null
-      },
-      {
-        "name": "pdf_processing_pipeline_count",
-        "type": "counter",
-        "value": 3,
-        "timestamp": 1770726435.5929766,
-        "labels": {
-          "tags": [
-            "pdf",
-            "llm_optimization"
-          ],
-          "status": "error"
         },
         "description": null
       }
@@ -639,11 +625,11 @@
         "name": "operation_completed",
         "type": "event",
         "value": {
-          "operation_id": "pdf_processing_pipeline_1770726439_15",
+          "operation_id": "pdf_processing_pipeline_1770749379_121",
           "operation_type": "pdf_processing_pipeline",
-          "start_time": 1770726439.7994065,
-          "end_time": 1770726439.9489253,
-          "duration_ms": 149.5187282562256,
+          "start_time": 1770749379.0660298,
+          "end_time": 1770749380.6481762,
+          "duration_ms": 1582.146406173706,
           "status": "success",
           "success": true,
           "error": null,
@@ -656,7 +642,7 @@
           "sub_operations": [],
           "metrics": {}
         },
-        "timestamp": 1770726439.948954,
+        "timestamp": 1770749380.6482303,
         "labels": {
           "tags": [
             "pdf",
@@ -669,11 +655,11 @@
   },
   "operations": [
     {
-      "operation_id": "pdf_processing_pipeline_1770726114_0",
+      "operation_id": "pdf_processing_pipeline_1770748447_0",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726114.750177,
-      "end_time": 1770726116.3626432,
-      "duration_ms": 1612.4663352966309,
+      "start_time": 1770748447.8670619,
+      "end_time": 1770748448.8279996,
+      "duration_ms": 960.9377384185791,
       "status": "success",
       "success": true,
       "error": null,
@@ -687,11 +673,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726119_1",
+      "operation_id": "pdf_processing_pipeline_1770748451_1",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726119.351121,
-      "end_time": 1770726122.3376348,
-      "duration_ms": 2986.51385307312,
+      "start_time": 1770748451.9162424,
+      "end_time": 1770748452.8109307,
+      "duration_ms": 894.6883678436279,
       "status": "success",
       "success": true,
       "error": null,
@@ -705,11 +691,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726125_2",
+      "operation_id": "pdf_processing_pipeline_1770748455_2",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726125.414987,
-      "end_time": 1770726127.157272,
-      "duration_ms": 1742.2850131988525,
+      "start_time": 1770748455.8191803,
+      "end_time": 1770748456.7510018,
+      "duration_ms": 931.8215847015381,
       "status": "success",
       "success": true,
       "error": null,
@@ -723,11 +709,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726137_3",
+      "operation_id": "pdf_processing_pipeline_1770748459_3",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726137.9648838,
-      "end_time": 1770726150.7341368,
-      "duration_ms": 12769.253015518188,
+      "start_time": 1770748459.7446258,
+      "end_time": 1770748460.6231709,
+      "duration_ms": 878.5450458526611,
       "status": "success",
       "success": true,
       "error": null,
@@ -741,11 +727,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726192_4",
+      "operation_id": "pdf_processing_pipeline_1770748463_4",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726192.0191066,
-      "end_time": 1770726195.380937,
-      "duration_ms": 3361.830472946167,
+      "start_time": 1770748463.6734793,
+      "end_time": 1770748464.6022463,
+      "duration_ms": 928.7669658660889,
       "status": "success",
       "success": true,
       "error": null,
@@ -759,11 +745,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726214_5",
+      "operation_id": "pdf_processing_pipeline_1770748467_5",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726214.1750362,
-      "end_time": 1770726215.441252,
-      "duration_ms": 1266.2158012390137,
+      "start_time": 1770748467.6958544,
+      "end_time": 1770748468.6817162,
+      "duration_ms": 985.8617782592773,
       "status": "success",
       "success": true,
       "error": null,
@@ -777,11 +763,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726215_6",
+      "operation_id": "pdf_processing_pipeline_1770748471_6",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726215.4414365,
-      "end_time": 1770726216.0645757,
-      "duration_ms": 623.1391429901123,
+      "start_time": 1770748471.7140129,
+      "end_time": 1770748472.695284,
+      "duration_ms": 981.2710285186768,
       "status": "success",
       "success": true,
       "error": null,
@@ -795,11 +781,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726216_7",
+      "operation_id": "pdf_processing_pipeline_1770748475_7",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726216.0647683,
-      "end_time": 1770726216.7087383,
-      "duration_ms": 643.9700126647949,
+      "start_time": 1770748475.960578,
+      "end_time": 1770748476.9213593,
+      "duration_ms": 960.7813358306885,
       "status": "success",
       "success": true,
       "error": null,
@@ -813,11 +799,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726236_8",
+      "operation_id": "pdf_processing_pipeline_1770748480_8",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726236.796975,
-      "end_time": 1770726237.5574226,
-      "duration_ms": 760.4477405548096,
+      "start_time": 1770748480.0831227,
+      "end_time": 1770748480.96056,
+      "duration_ms": 877.4373531341553,
       "status": "success",
       "success": true,
       "error": null,
@@ -831,11 +817,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726356_9",
+      "operation_id": "pdf_processing_pipeline_1770748484_9",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726356.0422225,
-      "end_time": 1770726356.4310255,
-      "duration_ms": 388.80300521850586,
+      "start_time": 1770748484.2231383,
+      "end_time": 1770748485.098494,
+      "duration_ms": 875.3557205200195,
       "status": "success",
       "success": true,
       "error": null,
@@ -849,11 +835,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726359_10",
+      "operation_id": "pdf_processing_pipeline_1770748489_10",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726359.660432,
-      "end_time": 1770726364.4683487,
-      "duration_ms": 4807.916641235352,
+      "start_time": 1770748489.0402284,
+      "end_time": 1770748489.9285092,
+      "duration_ms": 888.2808685302734,
       "status": "success",
       "success": true,
       "error": null,
@@ -867,11 +853,11 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726367_11",
+      "operation_id": "pdf_processing_pipeline_1770748493_11",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726367.6503708,
-      "end_time": 1770726404.7672737,
-      "duration_ms": 37116.90282821655,
+      "start_time": 1770748493.4231262,
+      "end_time": 1770748494.2964797,
+      "duration_ms": 873.3534812927246,
       "status": "success",
       "success": true,
       "error": null,
@@ -885,14 +871,14 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726434_12",
+      "operation_id": "pdf_processing_pipeline_1770748497_12",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726434.9757385,
-      "end_time": 1770726435.0370927,
-      "duration_ms": 61.35416030883789,
-      "status": "error",
-      "success": false,
-      "error": "sentence must not exceed 512 characters",
+      "start_time": 1770748497.6859155,
+      "end_time": 1770748498.5854816,
+      "duration_ms": 899.5661735534668,
+      "status": "success",
+      "success": true,
+      "error": null,
       "labels": {
         "tags": [
           "pdf",
@@ -903,14 +889,14 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726435_13",
+      "operation_id": "pdf_processing_pipeline_1770748501_13",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726435.2764678,
-      "end_time": 1770726435.3196816,
-      "duration_ms": 43.213844299316406,
-      "status": "error",
-      "success": false,
-      "error": "sentence must not exceed 512 characters",
+      "start_time": 1770748501.6316519,
+      "end_time": 1770748502.5022614,
+      "duration_ms": 870.6095218658447,
+      "status": "success",
+      "success": true,
+      "error": null,
       "labels": {
         "tags": [
           "pdf",
@@ -921,14 +907,14 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726435_14",
+      "operation_id": "pdf_processing_pipeline_1770748505_14",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726435.5525053,
-      "end_time": 1770726435.5929527,
-      "duration_ms": 40.44747352600098,
-      "status": "error",
-      "success": false,
-      "error": "sentence must not exceed 512 characters",
+      "start_time": 1770748505.5716286,
+      "end_time": 1770748506.4382153,
+      "duration_ms": 866.5866851806641,
+      "status": "success",
+      "success": true,
+      "error": null,
       "labels": {
         "tags": [
           "pdf",
@@ -939,11 +925,1919 @@
       "metrics": {}
     },
     {
-      "operation_id": "pdf_processing_pipeline_1770726439_15",
+      "operation_id": "pdf_processing_pipeline_1770748509_15",
       "operation_type": "pdf_processing_pipeline",
-      "start_time": 1770726439.7994065,
-      "end_time": 1770726439.9489253,
-      "duration_ms": 149.5187282562256,
+      "start_time": 1770748509.4954312,
+      "end_time": 1770748510.371316,
+      "duration_ms": 875.8847713470459,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748513_16",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748513.5219672,
+      "end_time": 1770748514.4061668,
+      "duration_ms": 884.1996192932129,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748517_17",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748517.5647757,
+      "end_time": 1770748518.4328957,
+      "duration_ms": 868.1199550628662,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748521_18",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748521.460545,
+      "end_time": 1770748522.3100703,
+      "duration_ms": 849.5252132415771,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748525_19",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748525.9928217,
+      "end_time": 1770748526.8632925,
+      "duration_ms": 870.4707622528076,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748529_20",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748529.8684862,
+      "end_time": 1770748530.7639585,
+      "duration_ms": 895.4722881317139,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748533_21",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748533.8408656,
+      "end_time": 1770748534.8509147,
+      "duration_ms": 1010.0491046905518,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748537_22",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748537.8589995,
+      "end_time": 1770748538.7451105,
+      "duration_ms": 886.1110210418701,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748541_23",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748541.9166045,
+      "end_time": 1770748542.8469791,
+      "duration_ms": 930.3746223449707,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748545_24",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748545.8150237,
+      "end_time": 1770748546.679622,
+      "duration_ms": 864.598274230957,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748549_25",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748549.8663688,
+      "end_time": 1770748550.7218585,
+      "duration_ms": 855.4897308349609,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748553_26",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748553.9445672,
+      "end_time": 1770748554.9304345,
+      "duration_ms": 985.8672618865967,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748557_27",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748557.96138,
+      "end_time": 1770748558.8353574,
+      "duration_ms": 873.9774227142334,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748561_28",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748561.9348447,
+      "end_time": 1770748562.7807727,
+      "duration_ms": 845.9279537200928,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748565_29",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748565.932447,
+      "end_time": 1770748566.8024282,
+      "duration_ms": 869.9812889099121,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748569_30",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748569.9630008,
+      "end_time": 1770748570.8311534,
+      "duration_ms": 868.1526184082031,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748574_31",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748574.332055,
+      "end_time": 1770748575.4726043,
+      "duration_ms": 1140.5491828918457,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748579_32",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748579.1006098,
+      "end_time": 1770748579.9915307,
+      "duration_ms": 890.920877456665,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748584_33",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748584.9669232,
+      "end_time": 1770748585.823479,
+      "duration_ms": 856.555700302124,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748588_34",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748588.9918904,
+      "end_time": 1770748589.856175,
+      "duration_ms": 864.2845153808594,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748593_35",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748593.0118291,
+      "end_time": 1770748593.9477384,
+      "duration_ms": 935.9092712402344,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748597_36",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748597.2349944,
+      "end_time": 1770748598.1186683,
+      "duration_ms": 883.673906326294,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748601_37",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748601.1495752,
+      "end_time": 1770748602.0505898,
+      "duration_ms": 901.0145664215088,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748605_38",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748605.1341288,
+      "end_time": 1770748606.0287385,
+      "duration_ms": 894.6096897125244,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748609_39",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748609.162247,
+      "end_time": 1770748610.1826165,
+      "duration_ms": 1020.3695297241211,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748613_40",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748613.2260313,
+      "end_time": 1770748614.097343,
+      "duration_ms": 871.3116645812988,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748617_41",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748617.0284934,
+      "end_time": 1770748617.8871458,
+      "duration_ms": 858.6523532867432,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748620_42",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748620.8590279,
+      "end_time": 1770748621.7225425,
+      "duration_ms": 863.5146617889404,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748624_43",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748624.7458196,
+      "end_time": 1770748625.637311,
+      "duration_ms": 891.4914131164551,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748628_44",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748628.7520669,
+      "end_time": 1770748629.6558392,
+      "duration_ms": 903.7723541259766,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748632_45",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748632.6708734,
+      "end_time": 1770748633.5751646,
+      "duration_ms": 904.2911529541016,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748636_46",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748636.5701087,
+      "end_time": 1770748637.4719336,
+      "duration_ms": 901.824951171875,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748640_47",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748640.5002708,
+      "end_time": 1770748641.467712,
+      "duration_ms": 967.4410820007324,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748644_48",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748644.4900033,
+      "end_time": 1770748645.3603566,
+      "duration_ms": 870.3532218933105,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748648_49",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748648.3276927,
+      "end_time": 1770748649.1968417,
+      "duration_ms": 869.1489696502686,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748652_50",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748652.2065241,
+      "end_time": 1770748653.1047401,
+      "duration_ms": 898.2160091400146,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748656_51",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748656.3139164,
+      "end_time": 1770748657.1955235,
+      "duration_ms": 881.6070556640625,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748660_52",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748660.2388964,
+      "end_time": 1770748661.2581227,
+      "duration_ms": 1019.2263126373291,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748664_53",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748664.6676762,
+      "end_time": 1770748665.614866,
+      "duration_ms": 947.1898078918457,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748864_54",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748864.8627813,
+      "end_time": 1770748865.766495,
+      "duration_ms": 903.7137031555176,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748876_55",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748876.8545904,
+      "end_time": 1770748877.7668226,
+      "duration_ms": 912.2321605682373,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748880_56",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748880.8024244,
+      "end_time": 1770748881.728418,
+      "duration_ms": 925.9936809539795,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748884_57",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748884.7591877,
+      "end_time": 1770748885.3907034,
+      "duration_ms": 631.5157413482666,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748888_58",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748888.4327188,
+      "end_time": 1770748889.0661554,
+      "duration_ms": 633.4366798400879,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748892_59",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748892.0465927,
+      "end_time": 1770748893.0464208,
+      "duration_ms": 999.8281002044678,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748892_60",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748892.1666365,
+      "end_time": 1770748893.8911476,
+      "duration_ms": 1724.5111465454102,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748896_61",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748896.9564757,
+      "end_time": 1770748897.836114,
+      "duration_ms": 879.6381950378418,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748900_62",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748900.8442593,
+      "end_time": 1770748901.7475553,
+      "duration_ms": 903.2959938049316,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748904_63",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748904.891857,
+      "end_time": 1770748905.7525403,
+      "duration_ms": 860.6834411621094,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748908_64",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748908.7459993,
+      "end_time": 1770748909.6120389,
+      "duration_ms": 866.039514541626,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748912_65",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748912.7085238,
+      "end_time": 1770748913.5675569,
+      "duration_ms": 859.0331077575684,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748916_66",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748916.668638,
+      "end_time": 1770748917.5458446,
+      "duration_ms": 877.206563949585,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748920_67",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748920.8663337,
+      "end_time": 1770748921.7742925,
+      "duration_ms": 907.9587459564209,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748924_68",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748924.9379306,
+      "end_time": 1770748925.800713,
+      "duration_ms": 862.7824783325195,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748929_69",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748929.085957,
+      "end_time": 1770748929.9767876,
+      "duration_ms": 890.8305168151855,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748933_70",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748933.6279154,
+      "end_time": 1770748934.489205,
+      "duration_ms": 861.2895011901855,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748938_71",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748938.0172262,
+      "end_time": 1770748938.884173,
+      "duration_ms": 866.9466972351074,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748941_72",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748941.9172912,
+      "end_time": 1770748942.7836795,
+      "duration_ms": 866.3883209228516,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748945_73",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748945.8630502,
+      "end_time": 1770748946.7163486,
+      "duration_ms": 853.2984256744385,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748949_74",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748949.9207027,
+      "end_time": 1770748950.7841196,
+      "duration_ms": 863.4169101715088,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748953_75",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748953.8487127,
+      "end_time": 1770748954.8387768,
+      "duration_ms": 990.0641441345215,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748957_76",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748957.9353106,
+      "end_time": 1770748958.8189926,
+      "duration_ms": 883.6820125579834,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748962_77",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748962.0064542,
+      "end_time": 1770748962.8876035,
+      "duration_ms": 881.1492919921875,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748965_78",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748965.999482,
+      "end_time": 1770748966.8837693,
+      "duration_ms": 884.2873573303223,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748969_79",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748969.9390776,
+      "end_time": 1770748970.888469,
+      "duration_ms": 949.3913650512695,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748973_80",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748973.9138846,
+      "end_time": 1770748974.78282,
+      "duration_ms": 868.9353466033936,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748977_81",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748977.8165598,
+      "end_time": 1770748978.674465,
+      "duration_ms": 857.9051494598389,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748981_82",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748981.9636505,
+      "end_time": 1770748982.8312159,
+      "duration_ms": 867.565393447876,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748985_83",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748985.9575343,
+      "end_time": 1770748986.849542,
+      "duration_ms": 892.00758934021,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748989_84",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748989.9934876,
+      "end_time": 1770748990.976844,
+      "duration_ms": 983.3564758300781,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748994_85",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748994.041899,
+      "end_time": 1770748994.915367,
+      "duration_ms": 873.4679222106934,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770748998_86",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770748998.909267,
+      "end_time": 1770748999.7602458,
+      "duration_ms": 850.9788513183594,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749003_87",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749003.2290745,
+      "end_time": 1770749004.1143432,
+      "duration_ms": 885.2686882019043,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749007_88",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749007.0601256,
+      "end_time": 1770749007.9967964,
+      "duration_ms": 936.6707801818848,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749011_89",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749011.0666983,
+      "end_time": 1770749011.9599116,
+      "duration_ms": 893.2132720947266,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749015_90",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749015.0407166,
+      "end_time": 1770749015.9746172,
+      "duration_ms": 933.9005947113037,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749019_91",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749019.0210454,
+      "end_time": 1770749019.9054098,
+      "duration_ms": 884.3643665313721,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749023_92",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749023.176771,
+      "end_time": 1770749024.0670738,
+      "duration_ms": 890.3028964996338,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749027_93",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749027.1451707,
+      "end_time": 1770749028.1196501,
+      "duration_ms": 974.4794368743896,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749031_94",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749031.2395232,
+      "end_time": 1770749032.2365131,
+      "duration_ms": 996.9899654388428,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749035_95",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749035.2784805,
+      "end_time": 1770749036.208179,
+      "duration_ms": 929.6984672546387,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749039_96",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749039.374231,
+      "end_time": 1770749040.2552125,
+      "duration_ms": 880.9814453125,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749043_97",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749043.4009905,
+      "end_time": 1770749044.2737403,
+      "duration_ms": 872.7498054504395,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749047_98",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749047.3587146,
+      "end_time": 1770749048.2804606,
+      "duration_ms": 921.746015548706,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749051_99",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749051.2683384,
+      "end_time": 1770749052.1764982,
+      "duration_ms": 908.1597328186035,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749055_100",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749055.1438878,
+      "end_time": 1770749056.0910554,
+      "duration_ms": 947.1676349639893,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749059_101",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749059.1475737,
+      "end_time": 1770749060.0824406,
+      "duration_ms": 934.8669052124023,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749063_102",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749063.5997913,
+      "end_time": 1770749064.5617633,
+      "duration_ms": 961.9719982147217,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749067_103",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749067.6531758,
+      "end_time": 1770749068.6537006,
+      "duration_ms": 1000.5247592926025,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749072_104",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749072.256643,
+      "end_time": 1770749073.1361892,
+      "duration_ms": 879.5461654663086,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749076_105",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749076.3041754,
+      "end_time": 1770749077.228786,
+      "duration_ms": 924.6106147766113,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749080_106",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749080.3413677,
+      "end_time": 1770749081.2675292,
+      "duration_ms": 926.161527633667,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749084_107",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749084.3688185,
+      "end_time": 1770749085.271113,
+      "duration_ms": 902.294397354126,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749088_108",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749088.5955615,
+      "end_time": 1770749089.5055053,
+      "duration_ms": 909.9438190460205,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749093_109",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749093.4990337,
+      "end_time": 1770749094.601358,
+      "duration_ms": 1102.3242473602295,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749098_110",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749098.6383739,
+      "end_time": 1770749099.5290859,
+      "duration_ms": 890.7120227813721,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749106_111",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749106.8385966,
+      "end_time": 1770749107.9140093,
+      "duration_ms": 1075.4127502441406,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749116_112",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749116.7219062,
+      "end_time": 1770749117.6196575,
+      "duration_ms": 897.7513313293457,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749123_113",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749123.5684326,
+      "end_time": 1770749124.4268942,
+      "duration_ms": 858.4616184234619,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749130_114",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749130.5050404,
+      "end_time": 1770749131.3576913,
+      "duration_ms": 852.6508808135986,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749349_115",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749349.5759099,
+      "end_time": 1770749350.4419312,
+      "duration_ms": 866.0213947296143,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749363_116",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749363.3660016,
+      "end_time": 1770749364.212994,
+      "duration_ms": 846.9924926757812,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749367_117",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749367.2136426,
+      "end_time": 1770749368.0496998,
+      "duration_ms": 836.057186126709,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749371_118",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749371.410912,
+      "end_time": 1770749372.0605676,
+      "duration_ms": 649.6555805206299,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749375_119",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749375.0978115,
+      "end_time": 1770749375.745529,
+      "duration_ms": 647.7174758911133,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749378_120",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749378.940225,
+      "end_time": 1770749379.9028494,
+      "duration_ms": 962.6245498657227,
+      "status": "success",
+      "success": true,
+      "error": null,
+      "labels": {
+        "tags": [
+          "pdf",
+          "llm_optimization"
+        ]
+      },
+      "sub_operations": [],
+      "metrics": {}
+    },
+    {
+      "operation_id": "pdf_processing_pipeline_1770749379_121",
+      "operation_type": "pdf_processing_pipeline",
+      "start_time": 1770749379.0660298,
+      "end_time": 1770749380.6481762,
+      "duration_ms": 1582.146406173706,
       "status": "success",
       "success": true,
       "error": null,
@@ -957,7 +2851,7 @@
       "metrics": {}
     }
   ],
-  "timestamp": 1770727212.1469219,
+  "timestamp": 1770749750.8642325,
   "hostname": "barberb-HP-ZBook-Fury-16-G11-Mobile-Workstation-PC",
-  "uptime": 1100.8037774562836
+  "uptime": 2303.970561504364
 }
